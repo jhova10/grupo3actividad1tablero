@@ -1,0 +1,551 @@
+﻿patient_id,admission_date,age,gender,sepsis_severity,infection_source,comorbidities_count,sofa_score,apache_ii_score,initial_lactate_mmol,wbc_count_thousands,temperature_celsius,systolic_bp_mmhg,heart_rate_bpm,respiratory_rate_rpm,mechanical_ventilation,dialysis_required,vasopressor_use,icu_length_of_stay_days,outcome
+SEP00001,2024-01-01,83,F,Sepsis,Pulmonar,1,2,16,2.09,22.51,36.6,118,140,31,No,No,No,2,Superviviente
+SEP00002,2024-01-01,81,F,Sepsis Grave,Abdominal,2,13,37,3.43,12.54,39.8,96,125,26,Sí,No,No,9,Fallecido
+SEP00003,2024-01-02,80,F,Sepsis,Pulmonar,0,2,20,2.39,20.31,38.5,118,139,32,No,No,No,4,Superviviente
+SEP00004,2024-01-04,70,F,Sepsis,Pulmonar,4,5,21,2.6,10.6,38.0,144,100,31,No,No,No,4,Superviviente
+SEP00005,2024-01-07,95,M,Sepsis Grave,Pulmonar,1,7,36,2.01,6.61,39.2,95,95,32,No,Sí,Sí,11,Fallecido
+SEP00006,2024-01-09,68,M,Shock Séptico,Pulmonar,2,8,39,5.45,12.07,38.7,103,96,22,Sí,No,Sí,29,Fallecido
+SEP00007,2024-01-10,88,F,Sepsis Grave,Torrente Sanguíneo,1,8,23,0.78,4.54,37.3,90,101,32,No,No,No,5,Superviviente
+SEP00008,2024-01-12,74,M,Sepsis,Pulmonar,1,4,27,1.83,10.56,41.5,101,88,22,No,No,No,2,Superviviente
+SEP00009,2024-01-16,79,F,Sepsis,Piel/Tejidos Blandos,2,5,24,1.28,15.24,39.6,164,115,25,No,No,No,4,Fallecido
+SEP00010,2024-01-20,89,F,Shock Séptico,Otro,5,4,31,6.18,23.73,38.7,93,116,24,Sí,Sí,Sí,21,Fallecido
+SEP00011,2024-01-21,92,M,Sepsis,Abdominal,3,1,23,0.67,11.91,37.7,123,136,20,No,No,No,3,Superviviente
+SEP00012,2024-01-25,66,F,Sepsis,Pulmonar,1,5,21,1.59,6.81,39.9,123,74,15,No,No,No,2,Superviviente
+SEP00013,2024-01-26,82,M,Sepsis Grave,Urinaria,1,5,28,4.66,3.49,37.3,121,91,33,Sí,No,No,17,Fallecido
+SEP00014,2024-01-28,82,M,Sepsis Grave,Torrente Sanguíneo,5,8,28,2.69,20.88,37.2,106,126,21,No,No,No,5,Fallecido
+SEP00015,2024-01-28,63,F,Sepsis Grave,Urinaria,1,4,14,1.21,18.01,41.0,112,113,24,No,No,No,4,Fallecido
+SEP00016,2024-01-30,85,F,Sepsis,Pulmonar,0,5,29,2.21,4.19,38.5,99,110,21,No,No,No,1,Superviviente
+SEP00017,2024-02-02,67,M,Sepsis,Abdominal,1,5,17,1.53,1.36,37.4,129,135,24,No,No,No,6,Superviviente
+SEP00018,2024-02-02,76,M,Shock Séptico,Torrente Sanguíneo,3,14,42,5.13,13.64,38.5,81,89,22,Sí,Sí,Sí,33,Superviviente
+SEP00019,2024-02-06,77,F,Sepsis,Torrente Sanguíneo,2,6,25,1.42,21.98,39.8,125,95,33,No,No,No,2,Superviviente
+SEP00020,2024-02-09,78,F,Sepsis Grave,Pulmonar,2,11,23,5.87,14.28,39.4,74,93,22,Sí,No,Sí,15,Fallecido
+SEP00021,2024-02-10,70,F,Sepsis Grave,Abdominal,0,5,19,1.63,16.69,40.0,109,69,36,No,No,Sí,10,Fallecido
+SEP00022,2024-02-10,87,M,Sepsis Grave,Pulmonar,1,6,29,6.9,8.26,36.6,66,112,32,No,No,Sí,5,Superviviente
+SEP00023,2024-02-11,61,M,Sepsis,Pulmonar,1,5,17,1.69,2.69,39.9,110,99,23,No,No,No,2,Superviviente
+SEP00024,2024-02-12,83,M,Sepsis,Piel/Tejidos Blandos,2,6,14,2.15,5.18,38.2,89,95,27,No,No,No,3,Superviviente
+SEP00025,2024-02-14,74,F,Sepsis Grave,Pulmonar,3,6,31,2.81,9.59,38.6,109,91,29,No,No,No,3,Superviviente
+SEP00026,2024-02-15,80,M,Shock Séptico,Pulmonar,5,9,32,4.27,4.58,40.3,86,109,31,Sí,No,Sí,24,Fallecido
+SEP00027,2024-02-18,81,M,Shock Séptico,Pulmonar,2,10,35,3.93,16.89,39.6,73,94,31,Sí,No,Sí,45,Fallecido
+SEP00028,2024-02-21,69,F,Sepsis,Piel/Tejidos Blandos,2,0,10,2.48,3.15,39.0,136,114,27,No,No,No,5,Superviviente
+SEP00029,2024-02-21,79,M,Sepsis,Torrente Sanguíneo,1,1,19,0.87,3.08,35.5,101,119,20,No,No,No,4,Superviviente
+SEP00030,2024-02-23,78,F,Shock Séptico,Abdominal,1,8,38,6.23,13.54,38.4,50,104,29,No,No,Sí,21,Fallecido
+SEP00031,2024-02-25,74,F,Sepsis Grave,Torrente Sanguíneo,4,7,22,0.88,2.9,37.3,107,102,24,Sí,No,No,18,Superviviente
+SEP00032,2024-02-28,74,F,Shock Séptico,Pulmonar,4,12,43,6.05,4.89,39.6,58,113,12,Sí,Sí,Sí,33,Fallecido
+SEP00033,2024-02-29,82,M,Sepsis,Urinaria,1,4,25,2.68,13.84,40.0,102,109,28,Sí,No,No,4,Superviviente
+SEP00034,2024-03-01,64,M,Sepsis Grave,Urinaria,2,6,17,1.97,6.21,38.0,92,136,21,No,No,No,8,Superviviente
+SEP00035,2024-03-03,53,F,Sepsis Grave,Pulmonar,1,6,30,4.31,17.5,37.5,78,116,23,No,No,Sí,6,Superviviente
+SEP00036,2024-03-03,75,F,Sepsis Grave,Urinaria,3,8,30,3.56,13.12,40.8,92,131,26,Sí,No,No,8,Fallecido
+SEP00037,2024-03-04,78,F,Sepsis Grave,Piel/Tejidos Blandos,2,4,25,5.42,20.87,37.6,78,122,16,No,No,No,9,Fallecido
+SEP00038,2024-03-06,94,M,Sepsis,Pulmonar,4,5,26,1.32,4.44,36.7,117,83,26,No,Sí,No,12,Fallecido
+SEP00039,2024-03-06,80,F,Sepsis Grave,Pulmonar,1,11,31,6.88,7.73,37.3,81,98,24,No,No,No,7,Fallecido
+SEP00040,2024-03-10,66,F,Sepsis,Pulmonar,4,2,16,0.5,1.95,37.7,115,109,20,No,No,No,4,Fallecido
+SEP00041,2024-03-10,54,F,Sepsis Grave,Pulmonar,2,7,29,3.1,3.33,37.2,117,127,26,Sí,No,Sí,22,Fallecido
+SEP00042,2024-03-11,78,F,Shock Séptico,Piel/Tejidos Blandos,2,15,40,2.1,8.08,39.8,96,148,15,No,Sí,Sí,20,Fallecido
+SEP00043,2024-03-11,92,F,Sepsis Grave,Urinaria,1,7,30,5.72,6.64,35.2,98,100,26,Sí,No,No,21,Fallecido
+SEP00044,2024-03-11,64,F,Shock Séptico,Urinaria,1,13,42,4.98,20.11,37.2,70,111,28,Sí,Sí,Sí,34,Fallecido
+SEP00045,2024-03-12,72,M,Sepsis,Torrente Sanguíneo,0,3,17,1.86,15.93,38.4,117,125,27,No,No,No,4,Superviviente
+SEP00046,2024-03-13,79,M,Sepsis Grave,Pulmonar,4,11,37,4.03,14.29,38.8,89,108,30,No,No,No,6,Fallecido
+SEP00047,2024-03-14,72,M,Shock Séptico,Urinaria,2,13,41,5.49,13.0,41.0,88,142,32,Sí,No,Sí,13,Fallecido
+SEP00048,2024-03-15,88,M,Sepsis,Urinaria,3,5,25,1.52,6.18,40.8,89,83,25,No,No,No,2,Superviviente
+SEP00049,2024-03-15,84,M,Sepsis,Abdominal,1,5,27,0.99,0.9,36.1,127,123,32,No,No,No,3,Superviviente
+SEP00050,2024-03-16,62,M,Sepsis Grave,Otro,2,6,25,3.7,25.51,35.6,100,123,25,No,No,No,9,Fallecido
+SEP00051,2024-03-18,80,M,Sepsis,Torrente Sanguíneo,4,3,18,2.3,23.87,38.5,148,133,21,No,No,No,5,Fallecido
+SEP00052,2024-03-20,86,M,Sepsis Grave,Urinaria,4,9,37,4.33,2.64,37.5,119,111,23,No,Sí,No,11,Fallecido
+SEP00053,2024-03-21,75,F,Shock Séptico,Torrente Sanguíneo,4,12,33,9.33,20.54,36.7,93,127,27,Sí,No,No,27,Fallecido
+SEP00054,2024-03-22,63,F,Sepsis Grave,Pulmonar,1,5,16,0.89,4.26,38.5,98,105,32,No,No,No,17,Superviviente
+SEP00055,2024-03-23,90,M,Sepsis,Pulmonar,4,7,22,1.95,4.44,38.8,104,93,26,No,No,No,3,Superviviente
+SEP00056,2024-03-23,65,F,Sepsis Grave,Pulmonar,3,10,27,4.93,8.87,37.2,114,91,21,No,No,Sí,10,Fallecido
+SEP00057,2024-03-24,70,M,Sepsis Grave,Pulmonar,1,8,23,3.35,6.96,37.6,96,81,34,No,No,Sí,17,Superviviente
+SEP00058,2024-03-27,83,M,Sepsis,Urinaria,2,3,19,0.5,5.27,37.4,132,101,17,No,No,No,6,Superviviente
+SEP00059,2024-03-28,90,M,Sepsis Grave,Abdominal,3,8,35,1.95,6.1,37.9,106,116,21,No,No,No,7,Superviviente
+SEP00060,2024-03-30,91,M,Sepsis Grave,Piel/Tejidos Blandos,3,9,25,3.89,3.28,39.3,106,105,31,Sí,No,No,26,Fallecido
+SEP00061,2024-04-03,71,F,Sepsis Grave,Urinaria,1,2,6,3.85,14.16,36.9,108,113,36,No,No,Sí,10,Superviviente
+SEP00062,2024-04-09,90,F,Sepsis,Urinaria,5,8,28,2.54,2.81,37.5,101,134,28,No,No,No,2,Fallecido
+SEP00063,2024-04-09,75,M,Sepsis Grave,Pulmonar,5,6,27,2.56,17.57,37.9,84,99,27,No,No,No,4,Fallecido
+SEP00064,2024-04-10,77,M,Sepsis,Pulmonar,3,3,21,2.21,12.61,38.5,99,156,24,No,No,No,2,Superviviente
+SEP00065,2024-04-10,72,M,Sepsis,Abdominal,1,4,16,1.24,17.98,38.9,130,125,29,No,No,No,4,Superviviente
+SEP00066,2024-04-12,89,M,Shock Séptico,Urinaria,3,17,54,6.02,3.71,41.5,70,106,26,No,No,Sí,12,Superviviente
+SEP00067,2024-04-13,52,M,Sepsis Grave,Torrente Sanguíneo,1,7,17,3.56,26.49,39.4,87,105,21,No,No,Sí,7,Superviviente
+SEP00068,2024-04-14,71,M,Sepsis,Pulmonar,1,7,28,1.34,9.07,39.4,123,89,24,No,No,No,8,Superviviente
+SEP00069,2024-04-15,90,F,Sepsis,Pulmonar,1,4,23,3.25,16.15,38.1,111,109,20,No,No,No,4,Superviviente
+SEP00070,2024-04-16,82,F,Sepsis,Urinaria,1,2,15,0.64,18.16,37.0,109,66,26,No,No,No,1,Fallecido
+SEP00071,2024-04-18,94,M,Sepsis,Pulmonar,3,4,23,1.89,14.72,37.7,108,135,26,No,No,No,5,Fallecido
+SEP00072,2024-04-19,88,F,Sepsis,Pulmonar,2,3,26,1.33,9.31,37.4,80,60,35,No,No,No,11,Fallecido
+SEP00073,2024-04-19,73,M,Sepsis,Torrente Sanguíneo,0,1,17,3.47,22.29,39.1,100,110,22,No,No,No,1,Fallecido
+SEP00074,2024-04-21,88,M,Sepsis Grave,Pulmonar,0,8,36,4.22,17.68,36.0,117,87,24,No,No,No,10,Fallecido
+SEP00075,2024-04-24,89,M,Sepsis Grave,Abdominal,5,8,33,2.72,1.6,39.4,91,95,33,Sí,Sí,No,20,Fallecido
+SEP00076,2024-04-27,63,F,Sepsis Grave,Pulmonar,0,9,19,3.16,18.19,38.3,71,98,36,Sí,No,No,29,Superviviente
+SEP00077,2024-04-27,72,F,Sepsis Grave,Pulmonar,0,8,38,5.73,6.05,39.6,84,148,28,No,No,No,14,Fallecido
+SEP00078,2024-04-27,69,F,Sepsis,Urinaria,0,2,18,1.24,15.82,37.4,120,87,24,No,No,No,3,Superviviente
+SEP00079,2024-04-28,91,M,Shock Séptico,Torrente Sanguíneo,2,14,46,1.97,15.99,37.1,90,128,23,Sí,No,Sí,28,Superviviente
+SEP00080,2024-04-28,94,F,Shock Séptico,Urinaria,3,10,35,6.08,23.84,37.9,80,133,14,Sí,No,Sí,14,Superviviente
+SEP00081,2024-04-28,94,M,Shock Séptico,Torrente Sanguíneo,1,2,28,6.13,11.15,37.9,74,63,20,Sí,No,Sí,23,Fallecido
+SEP00082,2024-05-03,66,F,Shock Séptico,Pulmonar,0,12,28,6.83,24.64,39.7,63,97,26,Sí,No,Sí,19,Fallecido
+SEP00083,2024-05-04,84,M,Shock Séptico,Torrente Sanguíneo,2,10,37,6.85,20.86,39.7,90,139,24,Sí,No,Sí,24,Fallecido
+SEP00084,2024-05-07,94,M,Sepsis Grave,Pulmonar,4,8,23,5.62,2.11,41.4,112,83,29,No,No,No,4,Fallecido
+SEP00085,2024-05-07,72,F,Sepsis,Abdominal,1,7,29,0.63,12.66,37.8,134,133,24,No,No,No,5,Superviviente
+SEP00086,2024-05-08,87,F,Sepsis Grave,Abdominal,0,13,35,2.06,13.38,35.0,83,109,21,No,No,Sí,11,Superviviente
+SEP00087,2024-05-09,65,M,Sepsis Grave,Piel/Tejidos Blandos,2,7,25,4.29,6.83,37.9,120,108,28,No,No,No,14,Superviviente
+SEP00088,2024-05-10,81,F,Sepsis Grave,Urinaria,2,5,31,2.17,3.89,38.8,99,111,41,No,No,No,8,Superviviente
+SEP00089,2024-05-10,81,M,Sepsis Grave,Pulmonar,1,9,36,1.75,2.18,39.6,100,116,24,No,No,Sí,12,Superviviente
+SEP00090,2024-05-10,78,F,Sepsis,Pulmonar,2,3,26,3.49,17.48,39.0,128,90,26,No,No,No,10,Fallecido
+SEP00091,2024-05-11,84,F,Sepsis Grave,Torrente Sanguíneo,3,8,36,1.56,9.55,37.8,91,104,31,Sí,No,No,14,Fallecido
+SEP00092,2024-05-13,76,F,Shock Séptico,Urinaria,1,10,29,4.8,20.62,41.1,52,117,22,No,Sí,Sí,15,Fallecido
+SEP00093,2024-05-15,85,F,Sepsis Grave,Torrente Sanguíneo,5,8,34,3.43,19.69,36.9,110,113,33,No,Sí,Sí,17,Fallecido
+SEP00094,2024-05-15,82,M,Sepsis Grave,Pulmonar,2,5,16,5.07,12.47,38.1,105,116,16,No,Sí,No,12,Superviviente
+SEP00095,2024-05-16,49,M,Sepsis,Pulmonar,1,6,15,0.5,17.8,36.9,109,95,23,No,No,No,1,Superviviente
+SEP00096,2024-05-17,78,F,Sepsis Grave,Pulmonar,3,6,32,4.0,16.41,38.5,109,122,24,No,No,No,7,Superviviente
+SEP00097,2024-05-18,88,M,Shock Séptico,Otro,2,13,38,3.72,23.41,40.9,97,112,26,Sí,No,Sí,15,Fallecido
+SEP00098,2024-05-21,85,M,Sepsis Grave,Abdominal,3,4,14,4.25,10.84,38.3,77,78,14,No,Sí,No,10,Fallecido
+SEP00099,2024-05-21,87,M,Shock Séptico,Piel/Tejidos Blandos,4,14,52,3.69,3.27,38.3,85,99,34,Sí,No,Sí,25,Fallecido
+SEP00100,2024-05-22,86,M,Sepsis Grave,Pulmonar,2,5,28,5.39,12.8,36.0,65,92,28,No,No,No,11,Fallecido
+SEP00101,2024-05-22,73,F,Sepsis Grave,Abdominal,4,8,31,2.42,16.22,38.1,98,91,32,No,No,No,7,Fallecido
+SEP00102,2024-05-23,87,M,Sepsis,Abdominal,2,6,23,0.5,18.67,40.2,109,100,35,No,No,No,12,Superviviente
+SEP00103,2024-05-26,77,F,Sepsis Grave,Pulmonar,5,7,28,2.55,2.52,38.1,107,122,21,Sí,No,No,16,Fallecido
+SEP00104,2024-05-30,85,M,Sepsis Grave,Torrente Sanguíneo,3,5,27,3.19,14.18,38.0,83,97,12,No,No,No,11,Fallecido
+SEP00105,2024-05-31,82,M,Sepsis Grave,Piel/Tejidos Blandos,3,9,28,4.8,4.95,40.2,93,114,32,No,No,No,12,Fallecido
+SEP00106,2024-06-01,89,M,Sepsis Grave,Piel/Tejidos Blandos,3,5,25,1.99,22.79,38.0,51,111,24,No,Sí,Sí,11,Superviviente
+SEP00107,2024-06-03,74,M,Shock Séptico,Torrente Sanguíneo,1,10,24,3.02,18.47,40.4,93,94,19,Sí,Sí,Sí,34,Fallecido
+SEP00108,2024-06-05,80,M,Sepsis,Pulmonar,3,4,20,2.77,15.31,36.6,113,103,29,No,No,No,1,Fallecido
+SEP00109,2024-06-05,74,F,Shock Séptico,Pulmonar,5,16,47,2.75,14.83,39.5,86,127,40,Sí,Sí,Sí,21,Fallecido
+SEP00110,2024-06-07,92,M,Sepsis,Otro,1,4,21,1.86,18.74,41.0,92,112,25,No,No,No,2,Superviviente
+SEP00111,2024-06-07,93,F,Sepsis Grave,Pulmonar,3,8,42,3.31,3.84,40.0,105,120,31,No,No,Sí,10,Superviviente
+SEP00112,2024-06-08,69,M,Sepsis,Torrente Sanguíneo,0,5,14,2.17,7.76,35.7,139,135,20,No,No,No,1,Superviviente
+SEP00113,2024-06-08,61,M,Sepsis,Torrente Sanguíneo,1,4,16,1.4,4.36,37.5,112,118,15,No,No,No,1,Superviviente
+SEP00114,2024-06-10,67,F,Sepsis Grave,Abdominal,1,9,25,2.39,11.7,38.1,109,71,31,No,No,Sí,16,Superviviente
+SEP00115,2024-06-10,47,M,Sepsis,Otro,2,6,17,2.27,8.92,40.0,101,115,29,No,No,No,7,Superviviente
+SEP00116,2024-06-11,89,M,Sepsis Grave,Pulmonar,1,7,37,2.42,7.66,36.5,98,97,23,No,Sí,Sí,9,Superviviente
+SEP00117,2024-06-12,48,M,Shock Séptico,Pulmonar,1,2,6,2.78,14.92,37.0,62,146,36,Sí,Sí,Sí,23,Fallecido
+SEP00118,2024-06-12,64,M,Sepsis,Pulmonar,1,2,12,2.98,10.92,36.1,126,117,15,Sí,No,No,9,Superviviente
+SEP00119,2024-06-12,79,F,Shock Séptico,Urinaria,2,15,45,6.48,4.37,37.3,87,98,18,Sí,Sí,Sí,31,Fallecido
+SEP00120,2024-06-14,69,M,Sepsis Grave,Pulmonar,4,7,25,5.62,14.21,36.6,81,121,22,No,No,Sí,8,Superviviente
+SEP00121,2024-06-15,74,F,Sepsis Grave,Pulmonar,4,7,27,4.44,2.76,40.9,87,111,23,Sí,No,Sí,13,Superviviente
+SEP00122,2024-06-16,50,F,Sepsis,Torrente Sanguíneo,0,6,13,0.99,15.25,37.5,115,75,34,No,No,No,7,Superviviente
+SEP00123,2024-06-16,85,M,Sepsis,Piel/Tejidos Blandos,1,3,21,2.08,2.56,39.5,128,127,26,No,No,No,2,Fallecido
+SEP00124,2024-06-17,74,F,Sepsis,Pulmonar,3,0,19,1.19,25.15,38.5,137,101,24,Sí,No,No,8,Superviviente
+SEP00125,2024-06-18,69,M,Sepsis,Urinaria,1,0,4,0.68,4.28,38.5,112,138,18,No,No,No,5,Superviviente
+SEP00126,2024-06-19,95,F,Sepsis,Piel/Tejidos Blandos,1,4,22,1.64,13.5,37.6,94,107,32,No,No,No,5,Superviviente
+SEP00127,2024-06-20,69,M,Sepsis Grave,Pulmonar,1,7,16,4.68,15.68,39.7,103,138,19,Sí,No,No,18,Superviviente
+SEP00128,2024-06-22,94,F,Shock Séptico,Pulmonar,3,16,50,6.05,23.07,38.7,111,118,18,No,No,Sí,19,Fallecido
+SEP00129,2024-06-24,66,M,Shock Séptico,Pulmonar,4,9,34,2.72,20.78,38.6,60,129,23,Sí,No,Sí,24,Superviviente
+SEP00130,2024-06-27,63,M,Sepsis Grave,Abdominal,0,7,22,2.92,1.41,37.6,85,100,26,No,No,No,9,Superviviente
+SEP00131,2024-06-29,90,F,Sepsis,Pulmonar,5,2,16,1.89,2.04,37.9,124,117,21,No,No,No,6,Superviviente
+SEP00132,2024-06-30,68,F,Sepsis,Otro,2,2,11,0.65,12.09,39.4,117,75,30,Sí,Sí,No,17,Fallecido
+SEP00133,2024-07-01,85,M,Sepsis,Urinaria,2,0,15,2.57,13.8,38.8,106,107,24,Sí,No,No,7,Fallecido
+SEP00134,2024-07-01,89,M,Sepsis,Urinaria,1,3,21,1.82,13.02,38.7,118,80,32,No,No,No,3,Superviviente
+SEP00135,2024-07-05,87,F,Sepsis Grave,Pulmonar,3,7,34,1.83,3.55,37.4,114,87,29,Sí,No,No,10,Fallecido
+SEP00136,2024-07-06,72,F,Sepsis Grave,Urinaria,3,7,22,1.76,4.6,41.4,98,92,36,No,Sí,No,12,Fallecido
+SEP00137,2024-07-09,81,F,Sepsis Grave,Abdominal,4,13,41,4.82,20.51,37.8,97,123,23,Sí,No,No,11,Fallecido
+SEP00138,2024-07-13,83,F,Sepsis Grave,Torrente Sanguíneo,5,12,36,3.04,14.37,38.5,108,107,31,Sí,No,No,20,Fallecido
+SEP00139,2024-07-13,50,F,Shock Séptico,Torrente Sanguíneo,2,9,20,7.88,7.83,38.2,80,110,15,Sí,Sí,Sí,47,Fallecido
+SEP00140,2024-07-13,79,F,Shock Séptico,Abdominal,2,5,22,8.64,10.8,41.4,102,106,43,No,Sí,Sí,15,Fallecido
+SEP00141,2024-07-15,88,M,Sepsis,Piel/Tejidos Blandos,3,3,24,2.82,13.4,38.1,145,131,30,No,No,No,3,Superviviente
+SEP00142,2024-07-15,90,M,Shock Séptico,Torrente Sanguíneo,2,13,45,4.43,9.77,37.9,71,110,24,Sí,No,Sí,21,Fallecido
+SEP00143,2024-07-18,87,F,Shock Séptico,Torrente Sanguíneo,5,9,32,0.5,21.7,38.7,66,114,24,No,No,Sí,8,Fallecido
+SEP00144,2024-07-20,80,F,Sepsis,Pulmonar,3,2,13,2.25,10.1,37.5,120,98,24,No,No,No,2,Superviviente
+SEP00145,2024-07-22,88,M,Sepsis Grave,Pulmonar,1,11,42,6.01,19.09,38.7,80,132,37,Sí,No,No,26,Fallecido
+SEP00146,2024-07-22,74,M,Sepsis Grave,Pulmonar,1,7,22,3.46,7.59,41.5,80,134,31,No,No,Sí,10,Superviviente
+SEP00147,2024-07-23,93,F,Shock Séptico,Abdominal,5,13,43,1.52,19.29,38.9,54,109,23,Sí,No,Sí,22,Fallecido
+SEP00148,2024-07-23,88,M,Shock Séptico,Urinaria,4,9,33,4.15,3.29,38.9,79,98,18,Sí,No,Sí,17,Fallecido
+SEP00149,2024-07-28,76,M,Sepsis,Urinaria,2,3,19,1.85,5.77,37.4,114,77,33,No,No,No,6,Superviviente
+SEP00150,2024-07-30,77,M,Sepsis Grave,Piel/Tejidos Blandos,3,7,24,2.18,10.34,41.1,92,92,31,No,No,No,8,Superviviente
+SEP00151,2024-08-02,80,M,Sepsis Grave,Piel/Tejidos Blandos,5,6,29,0.5,13.18,41.4,120,66,30,No,No,No,7,Fallecido
+SEP00152,2024-08-03,82,M,Sepsis Grave,Piel/Tejidos Blandos,2,10,16,3.38,2.94,39.8,119,91,25,No,No,No,12,Superviviente
+SEP00153,2024-08-03,89,M,Sepsis,Pulmonar,4,1,25,1.37,3.27,39.5,143,117,24,No,No,No,3,Superviviente
+SEP00154,2024-08-03,94,M,Shock Séptico,Abdominal,0,12,36,9.05,14.27,38.1,85,108,36,Sí,No,Sí,18,Superviviente
+SEP00155,2024-08-04,72,F,Sepsis Grave,Pulmonar,4,7,28,3.62,14.37,39.1,117,156,36,Sí,No,Sí,19,Superviviente
+SEP00156,2024-08-04,76,M,Shock Séptico,Pulmonar,3,13,39,6.44,2.99,37.2,89,102,29,Sí,No,Sí,24,Fallecido
+SEP00157,2024-08-04,68,F,Shock Séptico,Pulmonar,2,10,36,5.26,5.64,36.8,88,101,31,Sí,Sí,Sí,33,Superviviente
+SEP00158,2024-08-05,69,F,Sepsis Grave,Pulmonar,3,10,31,3.61,20.97,36.3,92,131,27,Sí,No,Sí,15,Fallecido
+SEP00159,2024-08-06,81,M,Sepsis Grave,Urinaria,5,5,20,1.52,30.31,39.1,66,71,17,No,No,No,23,Fallecido
+SEP00160,2024-08-06,74,F,Sepsis Grave,Torrente Sanguíneo,2,10,23,2.25,3.95,36.4,109,80,20,No,No,Sí,4,Fallecido
+SEP00161,2024-08-06,74,M,Sepsis,Pulmonar,4,3,17,2.87,1.8,37.8,132,123,32,No,No,No,13,Fallecido
+SEP00162,2024-08-07,74,F,Sepsis Grave,Torrente Sanguíneo,4,4,11,3.75,10.83,38.4,77,106,33,Sí,Sí,Sí,17,Superviviente
+SEP00163,2024-08-08,72,M,Sepsis,Urinaria,0,5,19,1.68,19.07,40.0,114,106,32,No,No,No,1,Superviviente
+SEP00164,2024-08-10,66,F,Sepsis Grave,Pulmonar,2,7,23,4.08,17.93,37.6,114,91,28,No,Sí,No,15,Superviviente
+SEP00165,2024-08-11,95,F,Sepsis,Urinaria,2,0,15,2.4,3.07,40.2,109,114,32,No,Sí,No,13,Superviviente
+SEP00166,2024-08-11,72,M,Sepsis,Pulmonar,4,4,20,3.59,19.77,39.9,132,93,25,No,No,No,5,Superviviente
+SEP00167,2024-08-12,80,M,Sepsis,Abdominal,2,6,25,2.13,5.68,36.9,112,111,29,No,No,No,1,Superviviente
+SEP00168,2024-08-12,84,F,Sepsis,Urinaria,3,6,25,1.15,19.77,40.2,107,86,24,No,No,No,1,Superviviente
+SEP00169,2024-08-13,79,F,Sepsis Grave,Pulmonar,3,7,15,3.36,17.19,38.1,118,106,19,Sí,No,No,9,Superviviente
+SEP00170,2024-08-13,91,M,Sepsis Grave,Pulmonar,2,8,26,4.23,11.02,37.8,85,150,31,No,No,Sí,7,Superviviente
+SEP00171,2024-08-13,73,F,Sepsis Grave,Urinaria,3,8,31,4.69,1.35,38.1,89,101,33,No,No,No,5,Superviviente
+SEP00172,2024-08-15,64,M,Sepsis,Piel/Tejidos Blandos,3,6,26,0.71,16.61,38.5,101,107,40,No,No,No,3,Superviviente
+SEP00173,2024-08-16,79,F,Sepsis,Pulmonar,0,2,9,2.2,23.04,37.9,97,105,27,No,No,No,1,Superviviente
+SEP00174,2024-08-16,62,M,Sepsis,Torrente Sanguíneo,0,3,12,1.28,14.86,37.2,117,113,19,No,No,No,3,Superviviente
+SEP00175,2024-08-18,67,F,Sepsis,Abdominal,1,2,21,1.55,11.74,37.4,107,119,24,No,No,No,4,Superviviente
+SEP00176,2024-08-18,96,M,Shock Séptico,Piel/Tejidos Blandos,0,7,28,7.19,16.96,38.7,92,115,25,Sí,No,Sí,30,Superviviente
+SEP00177,2024-08-21,84,M,Sepsis,Torrente Sanguíneo,4,4,23,2.6,25.1,38.3,88,115,26,No,No,No,4,Superviviente
+SEP00178,2024-08-21,70,M,Sepsis Grave,Abdominal,0,12,41,2.69,18.16,39.3,83,106,28,No,Sí,Sí,21,Superviviente
+SEP00179,2024-08-22,90,M,Sepsis,Abdominal,3,3,21,1.87,18.7,38.6,115,112,28,Sí,No,No,10,Fallecido
+SEP00180,2024-08-23,65,M,Sepsis,Piel/Tejidos Blandos,1,2,12,1.57,5.33,38.6,137,105,30,No,No,No,1,Superviviente
+SEP00181,2024-08-24,87,M,Sepsis Grave,Urinaria,3,8,30,6.97,4.21,39.4,105,73,27,Sí,Sí,No,18,Superviviente
+SEP00182,2024-08-26,78,F,Sepsis Grave,Pulmonar,0,9,40,3.83,12.1,40.6,91,162,12,Sí,No,Sí,12,Fallecido
+SEP00183,2024-08-26,86,M,Sepsis,Pulmonar,2,3,24,1.33,0.88,40.7,92,124,27,No,No,No,4,Superviviente
+SEP00184,2024-08-28,88,M,Sepsis,Torrente Sanguíneo,1,6,28,3.06,2.12,40.5,105,90,26,Sí,No,No,3,Fallecido
+SEP00185,2024-08-28,85,M,Sepsis Grave,Torrente Sanguíneo,3,5,23,5.13,10.48,39.8,99,114,29,Sí,No,No,22,Fallecido
+SEP00186,2024-08-30,73,M,Sepsis,Pulmonar,4,3,21,3.43,19.3,41.5,79,83,23,No,No,No,5,Superviviente
+SEP00187,2024-08-30,68,M,Sepsis,Abdominal,3,4,22,3.67,19.99,39.2,96,100,27,No,No,No,3,Fallecido
+SEP00188,2024-08-31,78,M,Shock Séptico,Urinaria,5,13,33,6.92,3.76,39.0,73,80,29,Sí,No,Sí,41,Superviviente
+SEP00189,2024-09-01,49,M,Sepsis Grave,Pulmonar,1,8,25,3.08,9.66,41.5,96,108,25,Sí,No,No,26,Superviviente
+SEP00190,2024-09-01,78,M,Sepsis Grave,Otro,0,4,21,3.26,24.93,35.0,99,78,30,Sí,No,No,18,Fallecido
+SEP00191,2024-09-01,79,M,Sepsis Grave,Pulmonar,2,13,38,3.15,2.88,38.2,90,117,26,Sí,No,No,15,Fallecido
+SEP00192,2024-09-02,79,F,Sepsis Grave,Pulmonar,2,7,23,3.02,19.02,40.4,107,123,26,No,Sí,Sí,13,Superviviente
+SEP00193,2024-09-05,75,M,Sepsis Grave,Abdominal,1,8,26,4.99,16.25,40.0,101,93,12,Sí,No,Sí,14,Fallecido
+SEP00194,2024-09-07,83,M,Sepsis Grave,Torrente Sanguíneo,1,9,27,3.5,17.04,41.5,94,113,19,No,No,No,7,Fallecido
+SEP00195,2024-09-07,62,F,Sepsis Grave,Pulmonar,0,6,16,4.67,18.84,38.7,109,92,19,No,No,No,7,Superviviente
+SEP00196,2024-09-07,79,M,Sepsis,Abdominal,2,4,24,2.54,12.52,37.9,123,120,27,Sí,No,Sí,9,Superviviente
+SEP00197,2024-09-09,78,F,Sepsis Grave,Urinaria,4,6,24,2.18,22.53,38.0,78,96,33,No,No,No,14,Superviviente
+SEP00198,2024-09-09,84,M,Sepsis Grave,Pulmonar,2,9,26,1.44,8.1,39.0,99,125,25,Sí,No,No,15,Fallecido
+SEP00199,2024-09-10,81,F,Shock Séptico,Pulmonar,2,11,46,3.03,10.81,40.9,98,73,31,Sí,No,Sí,16,Fallecido
+SEP00200,2024-09-10,80,F,Sepsis Grave,Abdominal,2,8,24,2.99,5.44,41.0,115,89,29,Sí,Sí,Sí,18,Superviviente
+SEP00201,2024-09-10,74,M,Sepsis Grave,Pulmonar,1,5,28,3.66,18.95,38.4,105,87,26,No,Sí,Sí,10,Superviviente
+SEP00202,2024-09-11,77,F,Sepsis,Piel/Tejidos Blandos,0,2,10,1.48,28.7,38.9,111,114,29,No,No,No,9,Superviviente
+SEP00203,2024-09-11,94,M,Sepsis Grave,Torrente Sanguíneo,3,4,28,4.34,16.34,37.6,106,121,27,No,No,No,3,Fallecido
+SEP00204,2024-09-12,96,M,Sepsis,Otro,0,2,21,1.58,6.05,37.7,127,115,25,No,No,No,3,Superviviente
+SEP00205,2024-09-12,90,F,Sepsis,Pulmonar,3,0,14,2.21,0.71,40.1,116,99,28,No,No,No,1,Superviviente
+SEP00206,2024-09-14,80,F,Sepsis,Otro,1,3,21,2.09,8.93,40.9,118,60,34,No,Sí,No,7,Superviviente
+SEP00207,2024-09-14,77,M,Sepsis Grave,Urinaria,5,6,25,5.58,20.48,37.5,96,110,28,No,Sí,No,14,Fallecido
+SEP00208,2024-09-15,63,M,Sepsis,Pulmonar,1,4,14,1.22,7.3,38.9,94,125,27,No,No,No,6,Superviviente
+SEP00209,2024-09-17,84,M,Sepsis Grave,Pulmonar,2,8,26,6.15,15.01,38.1,97,163,20,Sí,No,No,13,Fallecido
+SEP00210,2024-09-22,71,M,Shock Séptico,Pulmonar,2,15,32,4.31,5.25,39.8,74,101,34,Sí,No,Sí,23,Fallecido
+SEP00211,2024-09-24,59,F,Sepsis,Abdominal,1,9,27,0.93,18.51,37.9,104,96,17,No,No,No,7,Superviviente
+SEP00212,2024-09-24,79,M,Sepsis Grave,Urinaria,3,10,26,3.24,16.06,35.6,121,116,15,Sí,No,No,22,Fallecido
+SEP00213,2024-09-25,95,M,Sepsis Grave,Pulmonar,1,6,30,7.39,2.83,40.0,114,104,28,Sí,No,Sí,29,Superviviente
+SEP00214,2024-09-26,63,M,Sepsis,Abdominal,1,3,19,2.72,17.01,38.0,89,135,20,No,No,No,2,Superviviente
+SEP00215,2024-09-26,82,M,Shock Séptico,Pulmonar,0,14,42,6.71,18.89,38.2,68,93,32,Sí,No,Sí,38,Fallecido
+SEP00216,2024-09-27,82,M,Sepsis,Abdominal,4,0,12,2.64,12.7,39.2,109,105,15,No,No,No,3,Fallecido
+SEP00217,2024-09-27,80,F,Sepsis Grave,Urinaria,1,7,32,2.58,17.86,39.0,90,127,31,No,No,No,16,Superviviente
+SEP00218,2024-09-27,86,F,Sepsis Grave,Torrente Sanguíneo,3,7,27,3.89,21.39,39.2,104,116,30,No,No,No,13,Superviviente
+SEP00219,2024-09-28,67,F,Sepsis Grave,Torrente Sanguíneo,3,9,21,3.5,3.17,36.1,81,133,26,No,No,No,8,Superviviente
+SEP00220,2024-09-28,75,M,Sepsis Grave,Urinaria,2,9,29,5.67,16.34,39.3,114,101,13,No,No,Sí,19,Fallecido
+SEP00221,2024-09-28,81,F,Sepsis,Urinaria,5,2,22,1.91,4.23,35.6,114,135,15,No,No,No,8,Superviviente
+SEP00222,2024-09-28,68,F,Sepsis,Urinaria,1,3,14,1.7,18.76,39.7,109,76,27,No,No,No,1,Fallecido
+SEP00223,2024-09-28,68,F,Sepsis Grave,Torrente Sanguíneo,2,9,33,2.1,20.39,40.2,99,77,24,No,Sí,Sí,12,Fallecido
+SEP00224,2024-09-28,79,M,Sepsis Grave,Pulmonar,3,6,22,3.67,1.98,36.4,93,135,30,Sí,No,Sí,19,Fallecido
+SEP00225,2024-09-30,74,M,Shock Séptico,Pulmonar,1,15,37,6.09,13.36,39.0,54,110,25,Sí,No,Sí,16,Fallecido
+SEP00226,2024-09-30,77,M,Shock Séptico,Pulmonar,3,13,32,3.1,13.54,40.1,85,128,25,Sí,Sí,Sí,27,Fallecido
+SEP00227,2024-09-30,90,M,Shock Séptico,Urinaria,2,12,43,6.41,11.48,37.8,80,111,12,Sí,No,No,30,Fallecido
+SEP00228,2024-10-05,85,M,Sepsis Grave,Urinaria,2,8,30,3.78,0.8,39.5,85,109,30,Sí,No,No,15,Fallecido
+SEP00229,2024-10-05,73,M,Sepsis,Torrente Sanguíneo,2,3,14,2.81,0.5,35.0,131,83,22,No,No,No,4,Superviviente
+SEP00230,2024-10-06,81,M,Shock Séptico,Pulmonar,1,10,31,7.92,21.98,40.1,95,109,23,Sí,No,Sí,13,Fallecido
+SEP00231,2024-10-08,62,F,Sepsis Grave,Urinaria,1,6,6,3.61,8.23,38.5,136,137,19,No,Sí,No,19,Superviviente
+SEP00232,2024-10-10,55,M,Sepsis,Torrente Sanguíneo,0,4,20,1.17,23.83,38.1,127,111,16,No,No,No,5,Superviviente
+SEP00233,2024-10-10,78,M,Shock Séptico,Torrente Sanguíneo,2,12,35,3.84,19.7,40.0,75,123,34,Sí,No,Sí,22,Fallecido
+SEP00234,2024-10-11,83,F,Shock Séptico,Urinaria,0,10,22,9.02,13.97,41.1,71,123,30,Sí,No,Sí,33,Fallecido
+SEP00235,2024-10-11,89,F,Sepsis Grave,Urinaria,1,9,26,3.7,4.42,39.2,92,89,30,No,No,Sí,10,Superviviente
+SEP00236,2024-10-12,89,F,Sepsis,Pulmonar,1,3,21,3.4,4.14,40.9,105,127,24,No,No,No,3,Superviviente
+SEP00237,2024-10-12,89,F,Sepsis Grave,Piel/Tejidos Blandos,0,6,21,4.1,10.49,36.2,101,103,15,No,No,Sí,16,Superviviente
+SEP00238,2024-10-12,88,M,Shock Séptico,Pulmonar,1,12,43,7.01,15.93,39.5,61,104,38,Sí,No,Sí,26,Fallecido
+SEP00239,2024-10-15,75,F,Shock Séptico,Piel/Tejidos Blandos,2,8,30,7.38,2.03,38.3,94,151,28,Sí,No,Sí,17,Fallecido
+SEP00240,2024-10-17,70,M,Sepsis,Abdominal,1,0,14,1.02,19.27,37.3,116,121,26,No,No,No,2,Superviviente
+SEP00241,2024-10-19,74,M,Sepsis,Urinaria,5,3,6,2.25,2.43,35.6,122,97,23,No,No,No,2,Fallecido
+SEP00242,2024-10-23,75,M,Shock Séptico,Pulmonar,2,10,29,3.03,15.52,39.4,67,111,13,Sí,Sí,Sí,34,Fallecido
+SEP00243,2024-10-27,81,M,Sepsis Grave,Urinaria,4,7,24,3.16,15.3,39.8,103,110,32,No,No,No,13,Fallecido
+SEP00244,2024-10-30,60,M,Sepsis Grave,Urinaria,2,5,14,4.27,3.68,40.5,119,143,19,No,No,No,10,Superviviente
+SEP00245,2024-11-01,90,F,Shock Séptico,Pulmonar,2,15,42,3.45,5.99,40.3,72,110,29,Sí,No,Sí,18,Fallecido
+SEP00246,2024-11-02,68,F,Sepsis,Abdominal,3,2,10,2.45,14.8,37.3,101,154,30,No,No,No,3,Superviviente
+SEP00247,2024-11-03,70,F,Sepsis Grave,Otro,2,6,24,1.7,22.09,40.4,110,84,28,No,No,No,16,Superviviente
+SEP00248,2024-11-03,80,M,Sepsis,Abdominal,5,4,26,2.91,18.4,40.6,100,109,28,No,No,No,3,Superviviente
+SEP00249,2024-11-04,77,F,Sepsis Grave,Torrente Sanguíneo,5,4,25,2.7,5.63,38.1,96,94,34,Sí,Sí,Sí,19,Fallecido
+SEP00250,2024-11-10,87,F,Shock Séptico,Pulmonar,4,7,29,3.45,14.31,38.5,107,100,21,Sí,No,Sí,19,Fallecido
+SEP00251,2024-11-12,59,M,Sepsis Grave,Urinaria,2,8,34,1.78,4.54,37.1,86,100,26,No,No,No,14,Superviviente
+SEP00252,2024-11-13,73,F,Shock Séptico,Pulmonar,3,10,37,4.34,3.41,40.7,108,95,24,Sí,No,Sí,19,Fallecido
+SEP00253,2024-11-14,92,M,Sepsis Grave,Abdominal,3,5,26,1.21,1.05,36.2,94,144,14,No,No,Sí,13,Fallecido
+SEP00254,2024-11-15,64,M,Sepsis,Piel/Tejidos Blandos,2,5,18,1.56,1.87,39.3,98,138,27,No,No,No,2,Superviviente
+SEP00255,2024-11-17,71,F,Sepsis,Abdominal,5,2,23,2.88,18.91,37.6,124,118,33,No,No,No,5,Superviviente
+SEP00256,2024-11-17,79,M,Sepsis Grave,Pulmonar,2,7,32,3.27,4.27,36.8,101,100,34,Sí,No,No,17,Fallecido
+SEP00257,2024-11-17,80,M,Sepsis Grave,Urinaria,1,5,17,2.09,9.53,35.7,100,96,37,Sí,No,No,15,Superviviente
+SEP00258,2024-11-18,77,F,Sepsis,Abdominal,0,4,27,2.18,3.83,38.2,103,124,15,No,No,No,3,Superviviente
+SEP00259,2024-11-19,85,F,Sepsis Grave,Urinaria,0,11,35,3.67,18.52,36.6,101,116,35,Sí,No,No,17,Fallecido
+SEP00260,2024-11-19,80,M,Sepsis Grave,Torrente Sanguíneo,4,3,16,5.85,15.83,38.6,68,107,27,No,No,Sí,10,Superviviente
+SEP00261,2024-11-19,61,M,Sepsis Grave,Torrente Sanguíneo,0,8,15,4.45,19.64,41.2,103,120,35,No,No,No,7,Superviviente
+SEP00262,2024-11-20,63,M,Sepsis Grave,Abdominal,5,10,27,3.87,4.39,38.8,119,127,23,No,No,No,15,Superviviente
+SEP00263,2024-11-25,81,F,Sepsis Grave,Urinaria,2,6,26,4.59,15.82,41.5,73,106,22,Sí,No,No,20,Fallecido
+SEP00264,2024-11-30,74,M,Sepsis,Pulmonar,2,1,23,1.89,13.45,37.0,108,94,18,No,No,No,2,Superviviente
+SEP00265,2024-12-01,87,M,Sepsis,Pulmonar,4,4,29,1.94,21.21,36.6,101,83,30,No,No,No,2,Fallecido
+SEP00266,2024-12-04,71,F,Sepsis Grave,Urinaria,2,10,28,5.49,18.32,37.0,77,115,29,No,No,No,4,Fallecido
+SEP00267,2024-12-05,87,M,Sepsis Grave,Urinaria,3,10,37,1.54,9.09,38.4,69,153,19,No,No,No,13,Fallecido
+SEP00268,2024-12-06,82,M,Sepsis,Abdominal,2,4,27,2.77,17.1,41.5,97,87,13,No,No,No,3,Superviviente
+SEP00269,2024-12-09,93,M,Shock Séptico,Abdominal,2,12,40,5.28,10.24,36.0,81,131,28,Sí,No,Sí,23,Fallecido
+SEP00270,2024-12-11,78,F,Shock Séptico,Pulmonar,0,9,28,4.92,11.18,39.4,102,96,29,No,No,Sí,13,Fallecido
+SEP00271,2024-12-19,86,M,Sepsis Grave,Urinaria,4,10,32,2.84,12.74,37.5,77,100,20,Sí,No,No,15,Fallecido
+SEP00272,2024-12-23,74,M,Sepsis,Pulmonar,5,5,24,2.12,16.22,38.2,119,128,18,No,No,No,4,Superviviente
+SEP00273,2024-12-24,51,F,Shock Séptico,Pulmonar,1,8,24,5.41,17.87,36.6,88,104,29,Sí,No,Sí,16,Fallecido
+SEP00274,2024-12-25,76,M,Sepsis Grave,Torrente Sanguíneo,3,8,27,3.0,13.96,39.8,125,114,37,No,No,No,11,Superviviente
+SEP00275,2024-12-28,69,M,Shock Séptico,Pulmonar,0,13,23,4.09,2.95,38.4,93,114,23,Sí,Sí,Sí,29,Superviviente
+SEP00276,2024-12-28,73,M,Shock Séptico,Urinaria,5,14,32,1.69,13.48,40.1,94,96,20,Sí,No,Sí,32,Fallecido
+SEP00277,2024-12-29,53,M,Shock Séptico,Pulmonar,0,11,31,4.05,5.07,38.8,95,127,27,Sí,Sí,Sí,30,Fallecido
+SEP00278,2025-01-02,87,M,Sepsis Grave,Piel/Tejidos Blandos,4,5,15,2.89,0.5,35.6,86,108,29,Sí,Sí,No,15,Fallecido
+SEP00279,2025-01-05,94,M,Sepsis,Abdominal,2,2,28,2.12,3.04,40.1,106,82,23,Sí,No,No,6,Fallecido
+SEP00280,2025-01-06,96,M,Sepsis Grave,Pulmonar,2,5,33,5.86,23.72,35.5,116,92,38,Sí,No,No,17,Fallecido
+SEP00281,2025-01-07,79,M,Sepsis Grave,Urinaria,3,7,28,2.76,18.59,35.7,69,60,31,Sí,No,No,14,Fallecido
+SEP00282,2025-01-12,73,F,Sepsis Grave,Torrente Sanguíneo,5,7,29,2.27,5.4,37.1,89,111,23,Sí,Sí,No,24,Superviviente
+SEP00283,2025-01-17,90,F,Sepsis,Otro,1,8,35,1.43,0.5,37.1,95,136,16,No,No,No,1,Superviviente
+SEP00284,2025-01-17,78,F,Sepsis,Pulmonar,3,5,23,2.12,9.79,40.6,118,89,33,No,No,No,6,Superviviente
+SEP00285,2025-01-23,85,F,Shock Séptico,Piel/Tejidos Blandos,3,14,35,6.68,18.57,38.2,78,121,33,Sí,No,Sí,24,Fallecido
+SEP00286,2025-01-24,76,M,Sepsis Grave,Piel/Tejidos Blandos,3,9,35,4.37,23.75,40.4,109,118,24,Sí,No,No,24,Superviviente
+SEP00287,2025-01-24,68,F,Shock Séptico,Piel/Tejidos Blandos,1,10,37,7.16,10.29,37.6,83,94,28,Sí,Sí,Sí,27,Superviviente
+SEP00288,2025-01-27,78,M,Shock Séptico,Abdominal,0,11,28,7.44,2.92,39.0,61,140,25,No,No,Sí,13,Superviviente
+SEP00289,2025-01-29,86,F,Sepsis Grave,Abdominal,2,7,22,3.17,4.1,39.2,77,104,29,No,No,Sí,6,Fallecido
+SEP00290,2025-01-29,78,F,Sepsis Grave,Urinaria,2,8,28,5.96,8.74,39.5,99,150,19,Sí,No,No,17,Fallecido
+SEP00291,2025-02-02,84,F,Shock Séptico,Torrente Sanguíneo,0,13,36,4.79,18.61,37.8,73,77,18,Sí,No,Sí,17,Fallecido
+SEP00292,2025-02-03,85,F,Sepsis Grave,Urinaria,1,8,31,3.63,2.62,37.9,92,104,30,No,No,No,20,Superviviente
+SEP00293,2025-02-03,81,F,Sepsis Grave,Abdominal,0,7,34,5.05,4.24,38.1,114,106,31,No,No,No,9,Fallecido
+SEP00294,2025-02-09,87,M,Sepsis,Urinaria,0,2,9,2.45,11.02,36.0,126,109,23,No,No,No,9,Fallecido
+SEP00295,2025-02-12,84,M,Sepsis Grave,Torrente Sanguíneo,2,4,31,0.81,13.76,38.4,126,124,21,No,Sí,Sí,8,Superviviente
+SEP00296,2025-02-12,78,F,Sepsis Grave,Torrente Sanguíneo,3,11,32,3.51,19.26,37.9,95,177,32,No,No,No,3,Superviviente
+SEP00297,2025-02-12,93,M,Sepsis,Pulmonar,0,8,35,2.69,18.24,39.4,105,119,21,No,No,No,2,Fallecido
+SEP00298,2025-02-13,57,F,Sepsis,Torrente Sanguíneo,2,6,23,0.93,3.49,38.6,121,110,26,No,No,No,5,Superviviente
+SEP00299,2025-02-14,69,F,Sepsis,Urinaria,1,1,18,2.6,20.85,40.5,106,88,25,No,No,No,4,Superviviente
+SEP00300,2025-02-16,85,M,Sepsis,Torrente Sanguíneo,1,5,26,2.31,7.5,38.6,107,72,17,No,No,No,2,Superviviente
+SEP00301,2025-02-18,94,F,Sepsis,Urinaria,1,6,31,2.95,17.02,37.7,111,133,27,Sí,No,No,11,Fallecido
+SEP00302,2025-02-19,74,F,Sepsis Grave,Urinaria,5,6,26,2.67,2.31,38.6,124,99,26,No,No,Sí,9,Fallecido
+SEP00303,2025-02-20,79,F,Shock Séptico,Piel/Tejidos Blandos,3,13,35,7.49,4.88,39.6,95,162,28,Sí,No,No,17,Fallecido
+SEP00304,2025-02-20,66,F,Sepsis Grave,Pulmonar,2,6,14,3.69,4.53,35.8,112,127,26,No,No,No,18,Superviviente
+SEP00305,2025-02-21,86,M,Sepsis,Torrente Sanguíneo,4,7,23,3.41,19.62,37.4,139,116,38,No,No,No,1,Superviviente
+SEP00306,2025-02-22,87,F,Sepsis,Urinaria,4,4,23,4.23,24.23,37.5,128,117,32,No,No,No,4,Fallecido
+SEP00307,2025-02-25,85,F,Sepsis Grave,Urinaria,0,5,21,5.35,5.19,39.1,83,118,26,No,No,No,10,Superviviente
+SEP00308,2025-02-28,81,M,Sepsis Grave,Pulmonar,3,9,28,4.08,3.26,39.3,113,96,26,Sí,Sí,No,20,Fallecido
+SEP00309,2025-02-28,89,M,Shock Séptico,Abdominal,3,15,53,10.14,3.5,38.7,100,74,36,Sí,Sí,Sí,35,Fallecido
+SEP00310,2025-03-01,81,F,Sepsis Grave,Pulmonar,5,8,34,4.22,19.0,35.0,109,98,31,Sí,No,No,11,Fallecido
+SEP00311,2025-03-05,81,M,Shock Séptico,Pulmonar,1,13,37,3.68,16.68,36.0,82,109,18,Sí,No,Sí,17,Fallecido
+SEP00312,2025-03-05,80,F,Sepsis,Pulmonar,4,3,24,1.97,19.53,38.1,123,97,31,No,No,Sí,7,Fallecido
+SEP00313,2025-03-06,81,F,Sepsis Grave,Pulmonar,2,5,22,4.41,0.5,37.7,99,84,33,No,No,No,12,Superviviente
+SEP00314,2025-03-06,71,M,Sepsis,Otro,2,3,19,2.66,6.32,38.5,100,95,35,No,No,No,8,Superviviente
+SEP00315,2025-03-07,68,F,Shock Séptico,Otro,1,13,38,3.25,3.59,37.8,74,130,23,Sí,Sí,Sí,26,Fallecido
+SEP00316,2025-03-08,59,F,Sepsis Grave,Urinaria,0,7,20,2.19,7.89,40.8,110,124,23,No,No,No,9,Superviviente
+SEP00317,2025-03-08,66,M,Sepsis,Torrente Sanguíneo,1,5,17,1.73,11.43,35.1,101,113,20,Sí,No,No,14,Fallecido
+SEP00318,2025-03-08,80,M,Sepsis,Pulmonar,1,3,27,2.43,5.35,39.0,102,121,27,Sí,No,No,15,Fallecido
+SEP00319,2025-03-09,81,M,Sepsis,Abdominal,3,3,24,2.53,1.86,39.7,126,87,30,No,No,No,1,Superviviente
+SEP00320,2025-03-09,57,M,Sepsis Grave,Torrente Sanguíneo,0,10,16,3.67,15.29,39.6,102,94,22,No,No,No,20,Fallecido
+SEP00321,2025-03-09,66,F,Sepsis,Piel/Tejidos Blandos,3,4,15,1.33,23.57,39.7,123,116,25,No,No,No,2,Fallecido
+SEP00322,2025-03-11,70,M,Sepsis Grave,Urinaria,2,6,19,5.58,4.12,39.9,81,89,13,Sí,No,No,17,Superviviente
+SEP00323,2025-03-12,72,F,Sepsis,Torrente Sanguíneo,3,6,21,1.14,17.16,37.6,123,112,35,No,No,No,5,Fallecido
+SEP00324,2025-03-14,64,M,Sepsis Grave,Pulmonar,3,6,26,5.06,1.8,36.8,90,84,16,Sí,No,No,21,Fallecido
+SEP00325,2025-03-14,69,M,Shock Séptico,Otro,1,9,29,6.98,11.88,35.4,69,77,28,Sí,Sí,Sí,33,Superviviente
+SEP00326,2025-03-16,74,F,Shock Séptico,Pulmonar,4,3,12,8.06,12.27,38.0,77,124,27,Sí,No,Sí,24,Fallecido
+SEP00327,2025-03-16,87,F,Shock Séptico,Abdominal,1,10,33,4.61,12.47,37.3,105,130,26,Sí,No,Sí,28,Fallecido
+SEP00328,2025-03-17,61,M,Sepsis,Abdominal,1,6,24,1.89,14.24,40.2,109,97,26,No,No,No,3,Superviviente
+SEP00329,2025-03-20,81,M,Sepsis,Abdominal,5,0,14,2.04,14.62,38.1,148,79,19,No,No,No,2,Superviviente
+SEP00330,2025-03-21,49,M,Sepsis Grave,Pulmonar,1,5,13,2.93,2.99,37.0,69,65,24,No,Sí,No,14,Superviviente
+SEP00331,2025-03-22,75,M,Sepsis Grave,Piel/Tejidos Blandos,3,9,32,3.77,12.64,36.7,76,146,31,No,No,Sí,15,Fallecido
+SEP00332,2025-03-22,91,F,Sepsis Grave,Pulmonar,3,2,29,5.39,16.68,41.5,119,112,33,No,No,No,12,Superviviente
+SEP00333,2025-03-24,48,M,Sepsis,Abdominal,0,2,13,0.96,3.03,38.5,138,97,23,No,No,No,3,Superviviente
+SEP00334,2025-03-26,75,M,Sepsis,Pulmonar,2,6,31,1.47,8.02,37.3,102,102,16,No,No,No,3,Fallecido
+SEP00335,2025-03-28,88,M,Sepsis,Pulmonar,2,8,29,1.39,16.17,38.7,116,71,21,No,No,No,6,Fallecido
+SEP00336,2025-03-28,88,F,Shock Séptico,Urinaria,2,12,39,5.31,3.32,41.3,95,122,37,Sí,Sí,Sí,29,Fallecido
+SEP00337,2025-03-28,59,F,Sepsis,Urinaria,2,2,13,1.89,8.1,37.9,111,150,21,No,No,No,4,Superviviente
+SEP00338,2025-03-29,81,M,Sepsis Grave,Pulmonar,4,5,25,4.43,13.04,39.5,102,94,25,Sí,No,No,16,Superviviente
+SEP00339,2025-03-29,77,F,Sepsis,Pulmonar,1,4,24,2.03,18.99,40.3,115,157,34,Sí,No,No,6,Superviviente
+SEP00340,2025-04-01,63,M,Sepsis Grave,Urinaria,2,8,21,3.86,10.32,35.7,77,107,22,No,No,No,4,Superviviente
+SEP00341,2025-04-04,66,M,Sepsis,Torrente Sanguíneo,2,7,27,2.32,9.79,37.5,109,143,25,No,No,No,7,Superviviente
+SEP00342,2025-04-04,74,F,Shock Séptico,Piel/Tejidos Blandos,5,14,31,5.99,3.01,40.1,85,116,30,Sí,No,Sí,23,Fallecido
+SEP00343,2025-04-05,83,F,Shock Séptico,Pulmonar,4,12,31,6.91,4.43,37.5,86,116,36,No,No,Sí,18,Fallecido
+SEP00344,2025-04-07,80,F,Sepsis,Urinaria,2,3,31,1.9,25.05,39.1,89,146,22,No,No,No,3,Superviviente
+SEP00345,2025-04-09,63,F,Shock Séptico,Pulmonar,2,21,46,8.79,19.29,37.4,96,125,34,Sí,Sí,Sí,38,Fallecido
+SEP00346,2025-04-10,48,M,Shock Séptico,Pulmonar,0,13,34,10.58,21.42,37.8,86,117,24,Sí,No,Sí,20,Fallecido
+SEP00347,2025-04-10,79,F,Shock Séptico,Abdominal,2,9,39,6.91,17.73,37.6,69,71,20,No,No,Sí,16,Superviviente
+SEP00348,2025-04-11,81,M,Shock Séptico,Abdominal,3,11,23,5.96,12.57,39.5,111,79,27,Sí,No,Sí,30,Fallecido
+SEP00349,2025-04-12,90,F,Sepsis,Pulmonar,2,2,27,2.5,19.26,38.8,109,119,19,No,No,No,2,Fallecido
+SEP00350,2025-04-13,54,M,Sepsis Grave,Pulmonar,0,1,14,2.18,15.57,38.6,95,139,28,Sí,No,Sí,17,Superviviente
+SEP00351,2025-04-14,65,F,Sepsis,Pulmonar,2,4,27,2.14,17.89,41.5,124,112,44,No,No,No,1,Superviviente
+SEP00352,2025-04-16,87,M,Sepsis,Torrente Sanguíneo,1,7,23,1.41,2.08,41.1,143,98,32,No,No,Sí,2,Fallecido
+SEP00353,2025-04-17,87,M,Shock Séptico,Otro,4,7,37,6.52,18.33,35.5,95,73,25,No,No,Sí,11,Superviviente
+SEP00354,2025-04-18,93,F,Sepsis,Pulmonar,2,4,22,1.42,15.4,37.8,127,94,32,No,No,No,4,Superviviente
+SEP00355,2025-04-18,57,M,Sepsis Grave,Pulmonar,2,6,25,3.09,17.16,41.5,84,112,20,Sí,No,No,16,Fallecido
+SEP00356,2025-04-20,83,M,Shock Séptico,Piel/Tejidos Blandos,1,13,39,1.76,15.57,37.6,86,92,21,No,No,Sí,18,Fallecido
+SEP00357,2025-04-21,82,M,Shock Séptico,Piel/Tejidos Blandos,1,11,39,3.15,14.61,41.5,77,90,25,Sí,Sí,Sí,26,Fallecido
+SEP00358,2025-04-21,92,M,Shock Séptico,Urinaria,0,7,31,6.21,18.42,37.9,95,108,26,Sí,No,Sí,22,Superviviente
+SEP00359,2025-04-22,59,M,Sepsis,Pulmonar,0,2,4,1.3,2.89,38.1,126,138,18,No,No,No,2,Superviviente
+SEP00360,2025-04-23,76,M,Sepsis,Pulmonar,2,2,2,2.85,8.06,39.8,139,123,24,No,No,No,3,Superviviente
+SEP00361,2025-04-23,84,F,Sepsis Grave,Abdominal,2,11,37,2.36,0.69,38.4,67,115,25,No,No,No,5,Fallecido
+SEP00362,2025-04-24,84,M,Sepsis,Urinaria,1,6,25,2.36,16.92,39.2,105,113,35,No,No,No,5,Fallecido
+SEP00363,2025-04-26,73,F,Sepsis,Pulmonar,4,3,21,1.39,13.76,40.9,134,121,18,No,No,No,6,Superviviente
+SEP00364,2025-04-26,89,F,Sepsis Grave,Abdominal,4,11,36,3.96,7.35,39.6,78,107,17,No,No,No,9,Fallecido
+SEP00365,2025-04-29,57,M,Shock Séptico,Pulmonar,3,11,39,2.43,16.53,38.7,97,101,27,Sí,Sí,Sí,26,Fallecido
+SEP00366,2025-04-29,55,F,Sepsis Grave,Torrente Sanguíneo,2,7,23,2.96,3.36,41.0,117,124,32,No,Sí,No,14,Superviviente
+SEP00367,2025-04-29,81,M,Sepsis,Pulmonar,2,4,20,1.32,13.5,39.8,114,105,29,No,No,No,8,Superviviente
+SEP00368,2025-04-29,77,F,Sepsis Grave,Pulmonar,2,8,30,4.56,17.23,37.4,78,86,27,No,No,No,9,Fallecido
+SEP00369,2025-05-01,86,M,Sepsis,Abdominal,1,2,18,2.37,22.58,41.5,113,138,24,No,No,No,4,Superviviente
+SEP00370,2025-05-01,80,M,Sepsis,Urinaria,1,4,23,1.01,5.43,39.5,136,72,30,No,No,Sí,14,Superviviente
+SEP00371,2025-05-01,70,F,Shock Séptico,Otro,1,14,32,5.09,16.72,38.2,108,140,30,Sí,No,Sí,22,Fallecido
+SEP00372,2025-05-03,91,F,Sepsis Grave,Urinaria,1,8,32,2.57,3.37,35.5,103,120,24,No,No,No,11,Superviviente
+SEP00373,2025-05-11,78,F,Shock Séptico,Pulmonar,4,12,34,7.4,16.79,36.4,70,90,20,No,No,Sí,19,Fallecido
+SEP00374,2025-05-12,74,M,Sepsis,Torrente Sanguíneo,1,4,15,3.02,17.55,41.1,141,110,20,No,No,No,3,Superviviente
+SEP00375,2025-05-12,95,F,Shock Séptico,Pulmonar,2,14,54,2.62,14.66,41.1,97,101,31,Sí,Sí,Sí,30,Fallecido
+SEP00376,2025-05-12,62,M,Sepsis Grave,Piel/Tejidos Blandos,0,7,18,4.49,16.87,38.6,86,126,16,Sí,Sí,No,13,Fallecido
+SEP00377,2025-05-13,76,M,Sepsis Grave,Urinaria,2,6,25,2.51,8.13,35.8,105,125,36,Sí,No,No,15,Superviviente
+SEP00378,2025-05-14,84,M,Sepsis Grave,Urinaria,2,8,26,3.2,3.62,36.9,104,119,23,No,No,No,6,Fallecido
+SEP00379,2025-05-15,76,F,Shock Séptico,Pulmonar,4,7,28,5.56,18.38,36.1,75,124,27,Sí,No,Sí,26,Fallecido
+SEP00380,2025-05-15,69,M,Sepsis Grave,Urinaria,1,7,18,5.68,2.77,36.0,105,107,30,No,No,No,5,Superviviente
+SEP00381,2025-05-20,86,M,Sepsis Grave,Torrente Sanguíneo,4,1,23,2.3,15.52,41.5,116,145,21,No,No,No,12,Fallecido
+SEP00382,2025-05-26,72,F,Shock Séptico,Torrente Sanguíneo,5,6,34,7.17,1.83,41.5,80,134,23,Sí,Sí,Sí,14,Fallecido
+SEP00383,2025-05-27,88,M,Shock Séptico,Pulmonar,2,6,24,3.16,9.75,36.8,103,100,26,Sí,No,Sí,25,Fallecido
+SEP00384,2025-05-29,64,M,Sepsis Grave,Pulmonar,1,10,35,2.01,17.05,38.5,73,126,20,No,No,No,6,Superviviente
+SEP00385,2025-05-31,82,M,Sepsis Grave,Torrente Sanguíneo,4,8,28,3.53,12.35,36.6,133,124,19,No,No,No,7,Superviviente
+SEP00386,2025-06-01,70,F,Sepsis Grave,Piel/Tejidos Blandos,1,4,27,3.53,7.12,38.5,100,104,20,No,No,Sí,9,Superviviente
+SEP00387,2025-06-01,83,M,Sepsis,Pulmonar,2,4,34,0.5,1.83,41.0,131,103,33,No,No,Sí,9,Superviviente
+SEP00388,2025-06-02,89,M,Sepsis Grave,Urinaria,0,10,34,4.89,11.17,40.1,103,134,28,No,No,Sí,6,Fallecido
+SEP00389,2025-06-03,76,F,Shock Séptico,Pulmonar,4,13,30,1.22,19.87,39.7,72,109,21,No,No,Sí,17,Fallecido
+SEP00390,2025-06-03,78,F,Shock Séptico,Piel/Tejidos Blandos,2,11,39,5.21,3.77,38.2,84,115,31,Sí,No,Sí,31,Fallecido
+SEP00391,2025-06-03,51,M,Sepsis,Pulmonar,3,4,16,3.06,11.64,40.4,86,138,21,No,Sí,No,8,Superviviente
+SEP00392,2025-06-05,59,F,Sepsis Grave,Pulmonar,0,10,30,6.15,13.06,39.5,110,160,14,Sí,No,Sí,18,Superviviente
+SEP00393,2025-06-07,83,F,Sepsis,Torrente Sanguíneo,3,3,19,1.71,22.56,39.1,117,99,30,Sí,No,No,14,Fallecido
+SEP00394,2025-06-07,79,F,Shock Séptico,Pulmonar,3,12,32,2.63,4.9,38.3,82,105,35,Sí,Sí,Sí,24,Fallecido
+SEP00395,2025-06-10,92,M,Shock Séptico,Urinaria,4,11,44,8.08,10.41,39.0,96,111,29,Sí,No,Sí,20,Fallecido
+SEP00396,2025-06-11,85,F,Sepsis Grave,Urinaria,3,3,23,4.54,5.25,38.9,100,111,14,Sí,No,No,11,Fallecido
+SEP00397,2025-06-13,70,M,Shock Séptico,Pulmonar,0,14,30,4.52,3.38,37.7,94,117,25,Sí,No,Sí,31,Fallecido
+SEP00398,2025-06-17,73,M,Sepsis Grave,Urinaria,2,13,40,2.76,20.0,37.3,114,100,24,No,No,No,18,Fallecido
+SEP00399,2025-06-19,78,M,Sepsis Grave,Urinaria,2,5,26,2.64,3.26,37.0,91,84,28,No,No,Sí,5,Fallecido
+SEP00400,2025-06-24,72,M,Sepsis,Pulmonar,3,5,20,1.72,21.93,37.1,102,145,20,No,No,No,4,Fallecido
+SEP00401,2025-06-25,92,M,Sepsis Grave,Abdominal,4,5,35,3.88,1.76,38.2,74,122,23,Sí,No,No,13,Fallecido
+SEP00402,2025-06-25,69,F,Sepsis Grave,Torrente Sanguíneo,1,8,24,2.82,3.12,38.0,101,101,17,Sí,No,Sí,13,Superviviente
+SEP00403,2025-06-27,85,M,Sepsis Grave,Torrente Sanguíneo,1,11,35,2.97,22.08,37.6,106,118,27,Sí,No,Sí,19,Superviviente
+SEP00404,2025-06-27,86,M,Sepsis Grave,Pulmonar,3,6,31,4.27,4.04,37.5,80,146,17,Sí,Sí,No,20,Fallecido
+SEP00405,2025-06-27,66,M,Shock Séptico,Pulmonar,0,11,32,2.54,3.43,38.9,106,94,28,Sí,Sí,Sí,31,Superviviente
+SEP00406,2025-06-29,67,M,Sepsis,Pulmonar,2,0,5,1.7,14.03,40.6,102,114,21,Sí,No,No,18,Superviviente
+SEP00407,2025-06-30,78,F,Sepsis Grave,Urinaria,2,6,26,1.49,4.53,38.5,68,82,12,No,No,No,11,Fallecido
+SEP00408,2025-06-30,76,M,Sepsis Grave,Urinaria,1,3,17,3.63,5.1,38.4,122,107,30,No,No,No,12,Superviviente
+SEP00409,2025-07-03,81,M,Sepsis Grave,Abdominal,2,9,36,1.17,4.6,37.1,70,122,28,Sí,No,Sí,21,Superviviente
+SEP00410,2025-07-03,64,M,Sepsis Grave,Pulmonar,1,10,30,4.57,3.86,38.2,114,87,34,Sí,No,No,12,Superviviente
+SEP00411,2025-07-03,60,M,Sepsis,Pulmonar,0,3,16,0.95,3.56,40.3,125,106,13,No,No,Sí,6,Superviviente
+SEP00412,2025-07-03,77,M,Sepsis,Urinaria,2,4,16,0.58,2.99,40.1,119,125,22,No,Sí,No,6,Superviviente
+SEP00413,2025-07-04,84,F,Sepsis Grave,Abdominal,5,7,27,3.06,17.05,40.0,92,121,26,No,No,No,5,Superviviente
+SEP00414,2025-07-05,83,F,Sepsis Grave,Pulmonar,0,9,37,5.55,5.69,39.9,107,86,29,No,No,Sí,11,Fallecido
+SEP00415,2025-07-05,73,M,Sepsis,Abdominal,2,4,17,2.57,11.85,39.2,130,117,17,No,No,No,1,Superviviente
+SEP00416,2025-07-05,53,F,Sepsis Grave,Pulmonar,3,3,13,1.19,13.99,39.1,85,121,28,No,No,No,5,Superviviente
+SEP00417,2025-07-06,69,F,Sepsis Grave,Piel/Tejidos Blandos,1,10,26,1.89,15.62,38.9,114,112,22,No,No,No,10,Superviviente
+SEP00418,2025-07-06,84,F,Sepsis Grave,Piel/Tejidos Blandos,0,7,23,3.03,21.0,37.9,113,131,14,No,No,Sí,9,Fallecido
+SEP00419,2025-07-06,90,M,Shock Séptico,Pulmonar,1,8,31,9.98,17.12,38.6,89,98,21,Sí,Sí,Sí,37,Fallecido
+SEP00420,2025-07-07,56,M,Sepsis,Pulmonar,1,3,15,1.25,20.92,38.8,106,118,29,No,No,No,1,Superviviente
+SEP00421,2025-07-07,91,M,Sepsis,Urinaria,4,0,28,1.26,5.05,39.4,129,86,15,No,No,No,4,Superviviente
+SEP00422,2025-07-09,87,F,Shock Séptico,Pulmonar,4,8,29,8.55,4.39,38.7,92,77,29,Sí,No,Sí,19,Fallecido
+SEP00423,2025-07-10,89,F,Sepsis Grave,Abdominal,3,8,31,3.73,10.68,41.5,84,125,27,No,No,Sí,5,Fallecido
+SEP00424,2025-07-12,78,M,Sepsis Grave,Torrente Sanguíneo,3,8,23,4.76,24.31,36.7,94,110,24,No,No,No,4,Superviviente
+SEP00425,2025-07-12,80,M,Shock Séptico,Abdominal,4,12,40,4.05,23.06,39.6,97,100,16,No,Sí,Sí,16,Fallecido
+SEP00426,2025-07-13,89,F,Shock Séptico,Torrente Sanguíneo,1,12,41,5.3,3.6,38.4,86,88,16,No,Sí,Sí,16,Fallecido
+SEP00427,2025-07-15,71,F,Shock Séptico,Urinaria,2,9,36,8.13,9.09,38.5,101,126,23,No,Sí,Sí,12,Fallecido
+SEP00428,2025-07-16,92,F,Sepsis Grave,Pulmonar,2,7,36,3.33,1.16,37.3,94,79,19,Sí,No,No,20,Fallecido
+SEP00429,2025-07-17,79,F,Sepsis Grave,Torrente Sanguíneo,2,6,27,4.85,17.27,40.0,85,129,23,No,No,No,15,Fallecido
+SEP00430,2025-07-18,89,M,Sepsis Grave,Urinaria,3,3,20,3.96,12.49,39.5,132,119,31,No,No,No,2,Fallecido
+SEP00431,2025-07-19,89,F,Sepsis,Abdominal,3,2,22,1.17,0.92,39.8,89,80,24,No,No,No,2,Superviviente
+SEP00432,2025-07-20,50,F,Sepsis Grave,Pulmonar,2,10,25,3.48,1.13,38.8,92,112,24,Sí,No,No,13,Superviviente
+SEP00433,2025-07-20,85,M,Sepsis,Pulmonar,3,7,34,2.79,13.65,38.0,119,163,24,No,No,No,3,Superviviente
+SEP00434,2025-07-21,72,M,Shock Séptico,Otro,1,13,41,6.84,16.97,38.4,99,133,32,Sí,No,Sí,29,Fallecido
+SEP00435,2025-07-21,59,F,Sepsis Grave,Pulmonar,1,11,28,3.45,23.03,39.2,109,93,33,No,No,Sí,14,Superviviente
+SEP00436,2025-07-23,76,M,Sepsis Grave,Otro,1,8,21,1.23,4.23,35.5,134,124,28,Sí,No,Sí,17,Superviviente
+SEP00437,2025-07-26,91,F,Sepsis Grave,Otro,3,12,46,1.34,14.09,39.8,98,81,26,Sí,No,Sí,17,Fallecido
+SEP00438,2025-07-28,74,F,Sepsis,Torrente Sanguíneo,2,8,31,0.73,17.9,41.5,101,82,27,No,No,No,2,Superviviente
+SEP00439,2025-07-30,86,F,Sepsis,Abdominal,1,0,15,1.59,17.45,39.2,111,108,34,No,No,No,1,Fallecido
+SEP00440,2025-07-31,81,M,Sepsis Grave,Abdominal,4,8,32,3.05,4.61,38.1,95,121,28,No,No,No,8,Fallecido
+SEP00441,2025-07-31,65,M,Sepsis,Piel/Tejidos Blandos,0,4,19,0.82,15.8,38.3,113,126,35,No,No,No,7,Superviviente
+SEP00442,2025-08-01,96,F,Sepsis Grave,Pulmonar,0,6,36,4.73,21.18,39.6,85,126,23,Sí,No,No,13,Fallecido
+SEP00443,2025-08-03,83,M,Shock Séptico,Urinaria,1,13,30,2.97,20.12,38.1,96,119,17,Sí,Sí,Sí,25,Superviviente
+SEP00444,2025-08-03,94,F,Shock Séptico,Abdominal,3,12,38,2.76,3.62,39.8,90,77,21,Sí,No,Sí,28,Fallecido
+SEP00445,2025-08-05,66,F,Sepsis Grave,Urinaria,2,6,30,3.61,3.32,38.2,81,108,22,Sí,No,No,14,Fallecido
+SEP00446,2025-08-06,64,M,Sepsis,Urinaria,1,3,19,2.78,20.6,41.1,129,129,35,No,No,No,3,Superviviente
+SEP00447,2025-08-07,87,M,Shock Séptico,Pulmonar,3,15,53,9.61,2.43,41.0,72,118,30,Sí,Sí,Sí,33,Superviviente
+SEP00448,2025-08-12,86,M,Shock Séptico,Abdominal,2,12,32,6.67,8.47,38.0,67,113,22,Sí,Sí,Sí,17,Fallecido
+SEP00449,2025-08-12,78,M,Sepsis,Piel/Tejidos Blandos,5,5,29,3.26,8.44,38.4,116,116,30,No,No,No,1,Fallecido
+SEP00450,2025-08-13,88,F,Sepsis Grave,Pulmonar,3,7,35,2.05,12.02,38.5,73,116,25,Sí,No,No,26,Fallecido
+SEP00451,2025-08-15,72,F,Sepsis,Piel/Tejidos Blandos,4,4,12,3.73,19.3,38.5,123,70,35,No,No,No,6,Superviviente
+SEP00452,2025-08-16,61,F,Shock Séptico,Abdominal,2,8,23,1.78,13.89,37.1,50,133,23,Sí,No,No,29,Fallecido
+SEP00453,2025-08-17,62,F,Shock Séptico,Torrente Sanguíneo,1,10,28,4.49,3.81,36.9,69,107,16,No,Sí,Sí,23,Fallecido
+SEP00454,2025-08-19,84,M,Sepsis,Abdominal,4,3,13,2.45,13.52,40.4,138,124,24,No,No,No,5,Superviviente
+SEP00455,2025-08-20,62,F,Shock Séptico,Torrente Sanguíneo,1,8,24,2.29,13.56,40.1,74,63,24,No,No,Sí,14,Fallecido
+SEP00456,2025-08-20,92,F,Sepsis Grave,Pulmonar,3,5,31,2.39,10.87,40.1,92,143,17,Sí,No,Sí,28,Fallecido
+SEP00457,2025-08-21,84,F,Shock Séptico,Torrente Sanguíneo,4,12,36,3.33,3.36,38.4,104,86,29,Sí,No,Sí,21,Fallecido
+SEP00458,2025-08-21,88,F,Sepsis Grave,Pulmonar,2,8,33,3.13,3.24,41.3,88,160,34,No,No,No,14,Fallecido
+SEP00459,2025-08-25,92,M,Shock Séptico,Piel/Tejidos Blandos,5,14,44,8.34,18.06,38.5,96,152,19,Sí,No,Sí,20,Fallecido
+SEP00460,2025-08-26,79,F,Sepsis,Otro,3,2,18,2.01,17.44,39.8,132,83,31,No,No,No,2,Fallecido
+SEP00461,2025-08-27,70,M,Sepsis,Pulmonar,2,4,16,1.63,15.01,36.4,122,126,22,No,Sí,No,8,Fallecido
+SEP00462,2025-08-29,62,M,Sepsis,Pulmonar,1,2,17,0.5,1.24,38.2,93,89,25,Sí,No,No,11,Superviviente
+SEP00463,2025-08-31,82,M,Shock Séptico,Torrente Sanguíneo,2,14,33,6.43,21.35,38.3,75,97,25,Sí,No,Sí,31,Fallecido
+SEP00464,2025-09-01,67,F,Shock Séptico,Pulmonar,1,15,39,7.08,15.57,38.4,125,97,25,Sí,No,Sí,44,Fallecido
+SEP00465,2025-09-01,63,F,Shock Séptico,Piel/Tejidos Blandos,2,13,41,2.1,16.4,36.5,77,118,28,Sí,No,Sí,18,Fallecido
+SEP00466,2025-09-02,66,F,Shock Séptico,Pulmonar,1,15,36,5.37,24.0,39.6,129,116,19,Sí,No,Sí,27,Fallecido
+SEP00467,2025-09-08,83,F,Sepsis,Pulmonar,3,4,19,2.15,4.86,40.0,140,85,33,No,No,Sí,4,Fallecido
+SEP00468,2025-09-09,75,F,Sepsis Grave,Otro,1,10,35,4.66,18.23,37.4,107,118,29,No,No,No,4,Fallecido
+SEP00469,2025-09-10,74,F,Sepsis,Abdominal,2,4,22,1.42,15.99,36.8,119,105,31,No,No,No,9,Superviviente
+SEP00470,2025-09-11,64,M,Sepsis,Torrente Sanguíneo,0,1,17,1.3,15.94,37.3,108,73,21,No,No,No,3,Superviviente
+SEP00471,2025-09-12,70,M,Sepsis,Pulmonar,2,4,20,1.63,17.2,39.2,113,101,19,No,No,No,2,Superviviente
+SEP00472,2025-09-12,86,M,Sepsis Grave,Abdominal,2,5,14,5.04,18.03,37.6,89,143,33,Sí,No,Sí,24,Fallecido
+SEP00473,2025-09-13,57,F,Sepsis,Abdominal,0,8,30,2.84,6.07,38.3,114,101,19,No,No,No,3,Fallecido
+SEP00474,2025-09-13,83,F,Sepsis,Abdominal,5,3,32,1.98,28.37,36.9,94,73,26,No,No,No,7,Superviviente
+SEP00475,2025-09-13,90,M,Sepsis,Abdominal,1,5,33,2.82,17.45,41.5,93,126,32,No,No,No,3,Fallecido
+SEP00476,2025-09-15,83,M,Sepsis,Abdominal,2,3,3,0.5,5.23,38.6,134,91,25,No,No,No,5,Superviviente
+SEP00477,2025-09-15,67,F,Shock Séptico,Urinaria,2,8,28,7.08,11.24,40.2,60,114,33,Sí,No,Sí,22,Fallecido
+SEP00478,2025-09-17,83,M,Shock Séptico,Pulmonar,2,6,24,3.26,6.22,39.2,98,106,24,Sí,No,Sí,19,Superviviente
+SEP00479,2025-09-19,68,F,Shock Séptico,Torrente Sanguíneo,4,14,32,9.03,19.59,38.4,56,145,18,Sí,No,Sí,26,Superviviente
+SEP00480,2025-09-22,73,F,Sepsis Grave,Pulmonar,4,11,34,2.22,18.13,38.4,109,106,28,Sí,Sí,No,25,Superviviente
+SEP00481,2025-09-25,79,M,Sepsis,Abdominal,1,2,18,1.32,3.25,37.4,111,87,27,No,No,No,4,Superviviente
+SEP00482,2025-09-26,79,M,Shock Séptico,Pulmonar,2,7,30,6.62,10.05,37.8,104,100,42,Sí,No,Sí,13,Fallecido
+SEP00483,2025-09-29,84,F,Sepsis,Abdominal,1,3,22,2.53,24.39,37.0,110,85,20,No,No,No,1,Superviviente
+SEP00484,2025-10-02,71,F,Sepsis,Torrente Sanguíneo,3,2,11,1.64,2.27,36.8,84,105,24,No,Sí,No,6,Superviviente
+SEP00485,2025-10-03,68,M,Sepsis,Pulmonar,3,2,13,2.3,19.65,41.5,112,145,21,No,No,No,8,Superviviente
+SEP00486,2025-10-04,90,F,Sepsis,Pulmonar,2,5,23,2.4,1.55,38.9,117,134,25,No,Sí,No,8,Fallecido
+SEP00487,2025-10-05,81,M,Sepsis,Pulmonar,4,3,12,2.31,14.92,40.7,113,150,24,No,Sí,No,14,Superviviente
+SEP00488,2025-10-08,87,M,Sepsis Grave,Abdominal,3,5,19,3.01,20.96,37.3,108,119,20,No,No,No,14,Fallecido
+SEP00489,2025-10-10,88,F,Sepsis Grave,Torrente Sanguíneo,2,9,32,4.11,14.75,36.6,91,112,28,Sí,No,No,13,Fallecido
+SEP00490,2025-10-11,59,F,Sepsis,Pulmonar,2,5,26,3.13,14.16,37.0,96,90,24,No,No,No,4,Superviviente
+SEP00491,2025-10-12,88,M,Sepsis,Torrente Sanguíneo,1,3,20,1.02,16.05,37.9,100,115,34,Sí,No,No,13,Fallecido
+SEP00492,2025-10-12,77,F,Shock Séptico,Pulmonar,3,12,32,3.82,9.32,38.6,77,107,22,Sí,Sí,Sí,23,Fallecido
+SEP00493,2025-10-14,91,F,Sepsis,Urinaria,3,5,21,2.02,8.38,38.3,107,125,37,No,No,No,6,Superviviente
+SEP00494,2025-10-14,70,M,Sepsis,Piel/Tejidos Blandos,1,4,20,1.16,4.57,37.3,151,87,27,No,No,No,5,Superviviente
+SEP00495,2025-10-16,97,M,Shock Séptico,Pulmonar,1,12,47,1.89,13.89,38.6,103,111,33,Sí,No,Sí,19,Fallecido
+SEP00496,2025-10-16,78,F,Sepsis,Urinaria,2,6,35,2.87,19.53,38.8,125,78,26,No,No,No,5,Fallecido
+SEP00497,2025-10-17,71,M,Sepsis,Pulmonar,2,5,23,0.5,21.59,39.6,121,116,21,No,No,No,3,Superviviente
+SEP00498,2025-10-18,85,M,Sepsis Grave,Pulmonar,1,6,28,3.02,21.99,40.7,104,123,24,No,No,No,5,Fallecido
+SEP00499,2025-10-20,69,M,Sepsis,Pulmonar,3,3,15,2.61,1.07,38.0,119,77,17,No,No,No,2,Fallecido
+SEP00500,2025-10-22,61,F,Sepsis Grave,Pulmonar,3,6,19,3.82,12.51,40.3,102,83,25,Sí,Sí,Sí,17,Fallecido
+SEP00501,2025-10-23,89,F,Shock Séptico,Abdominal,1,13,44,4.73,4.31,38.6,85,84,27,Sí,No,Sí,34,Fallecido
+SEP00502,2025-10-25,84,F,Sepsis,Urinaria,5,2,18,1.12,18.77,36.2,83,106,26,No,No,No,1,Fallecido
+SEP00503,2025-10-27,70,M,Sepsis Grave,Urinaria,5,6,22,3.91,6.87,41.2,94,82,33,Sí,No,Sí,13,Superviviente
+SEP00504,2025-10-27,92,F,Sepsis Grave,Pulmonar,2,10,36,2.31,11.46,41.5,96,137,25,No,No,No,11,Fallecido
+SEP00505,2025-10-29,86,F,Sepsis,Pulmonar,4,4,21,2.21,21.84,39.4,103,118,14,Sí,No,No,10,Fallecido
+SEP00506,2025-10-31,62,F,Sepsis Grave,Abdominal,2,10,28,3.67,17.86,38.6,91,121,45,No,No,Sí,9,Fallecido
+SEP00507,2025-11-01,88,F,Sepsis,Otro,4,5,16,2.12,1.04,38.1,119,78,21,No,No,No,3,Fallecido
+SEP00508,2025-11-02,84,M,Sepsis Grave,Pulmonar,0,5,28,2.73,13.26,37.8,111,135,31,No,No,No,14,Superviviente
+SEP00509,2025-11-02,91,F,Sepsis,Piel/Tejidos Blandos,4,3,35,3.63,3.89,40.3,119,122,16,No,No,No,2,Fallecido
+SEP00510,2025-11-04,75,M,Sepsis Grave,Abdominal,1,10,29,3.93,0.94,38.5,111,96,27,No,No,Sí,6,Superviviente
+SEP00511,2025-11-05,74,M,Sepsis,Abdominal,2,1,17,1.78,5.63,41.0,126,79,21,Sí,No,No,4,Superviviente
+SEP00512,2025-11-05,79,M,Shock Séptico,Urinaria,3,13,42,6.03,7.19,38.6,80,108,12,Sí,Sí,Sí,25,Fallecido
+SEP00513,2025-11-06,72,M,Sepsis,Pulmonar,1,3,25,1.38,3.89,37.9,122,100,24,No,No,No,1,Superviviente
+SEP00514,2025-11-08,78,M,Sepsis Grave,Pulmonar,0,3,19,3.04,13.58,37.6,73,101,25,No,No,No,8,Superviviente
+SEP00515,2025-11-08,76,F,Sepsis Grave,Abdominal,4,8,19,6.37,12.9,37.4,94,95,24,No,No,No,4,Superviviente
+SEP00516,2025-11-09,79,M,Sepsis Grave,Pulmonar,4,5,25,2.58,13.07,39.3,92,124,27,No,No,No,8,Superviviente
+SEP00517,2025-11-10,81,F,Sepsis Grave,Piel/Tejidos Blandos,4,5,25,3.41,8.88,36.6,122,60,24,No,No,No,11,Fallecido
+SEP00518,2025-11-10,69,M,Sepsis Grave,Urinaria,1,8,25,2.95,13.72,37.3,105,138,26,No,No,No,9,Superviviente
+SEP00519,2025-11-10,94,M,Shock Séptico,Pulmonar,3,6,29,3.42,0.77,40.5,64,129,27,No,No,Sí,20,Superviviente
+SEP00520,2025-11-11,90,F,Shock Séptico,Torrente Sanguíneo,4,9,34,6.34,21.94,37.1,93,114,25,No,No,Sí,23,Superviviente
+SEP00521,2025-11-11,80,M,Sepsis,Pulmonar,3,9,33,2.03,24.46,39.8,128,107,24,No,No,No,4,Fallecido
+SEP00522,2025-11-13,58,M,Sepsis Grave,Urinaria,0,9,27,4.59,4.37,35.4,98,131,20,No,No,Sí,9,Fallecido
+SEP00523,2025-11-13,88,F,Shock Séptico,Abdominal,1,9,32,7.12,13.65,40.7,95,109,29,No,No,Sí,19,Superviviente
+SEP00524,2025-11-14,69,M,Shock Séptico,Piel/Tejidos Blandos,3,16,43,7.3,13.98,36.6,50,104,24,Sí,No,Sí,25,Fallecido
+SEP00525,2025-11-15,95,M,Shock Séptico,Torrente Sanguíneo,3,9,34,3.66,15.13,37.2,50,132,23,Sí,No,Sí,28,Fallecido
+SEP00526,2025-11-16,77,M,Sepsis Grave,Abdominal,1,6,28,4.27,21.01,39.5,82,151,29,Sí,No,No,16,Fallecido
+SEP00527,2025-11-16,68,F,Sepsis,Abdominal,1,1,11,2.53,13.67,38.9,117,90,27,No,No,No,1,Superviviente
+SEP00528,2025-11-16,73,F,Sepsis Grave,Piel/Tejidos Blandos,5,8,28,2.27,3.37,39.8,122,118,21,Sí,No,No,21,Superviviente
+SEP00529,2025-11-17,78,F,Sepsis Grave,Pulmonar,4,11,26,3.12,30.9,36.6,83,88,33,Sí,Sí,Sí,12,Fallecido
+SEP00530,2025-11-17,78,F,Sepsis Grave,Pulmonar,1,5,22,1.75,15.44,38.1,87,120,18,No,No,No,13,Fallecido
+SEP00531,2025-11-19,68,M,Sepsis Grave,Pulmonar,0,2,18,4.3,24.83,37.6,101,94,19,No,No,Sí,11,Fallecido
+SEP00532,2025-11-22,82,M,Shock Séptico,Pulmonar,2,15,37,6.83,18.51,36.8,77,134,30,No,Sí,Sí,24,Fallecido
+SEP00533,2025-11-22,83,F,Sepsis Grave,Abdominal,3,11,34,5.22,2.67,39.4,91,107,36,No,Sí,No,14,Fallecido
+SEP00534,2025-11-23,59,M,Shock Séptico,Abdominal,4,6,9,5.04,2.42,39.9,78,110,22,Sí,No,Sí,40,Fallecido
+SEP00535,2025-11-26,86,M,Sepsis Grave,Abdominal,1,9,26,4.04,15.96,38.0,119,142,28,Sí,No,Sí,12,Fallecido
+SEP00536,2025-11-27,74,M,Sepsis,Pulmonar,0,4,15,2.79,1.81,40.8,131,95,18,No,Sí,No,8,Superviviente
+SEP00537,2025-11-29,69,M,Sepsis Grave,Torrente Sanguíneo,2,6,24,2.6,2.2,37.3,100,123,20,No,No,No,15,Superviviente
+SEP00538,2025-11-29,78,F,Shock Séptico,Pulmonar,0,7,29,3.69,13.88,40.7,109,97,32,Sí,No,Sí,26,Fallecido
+SEP00539,2025-12-02,82,M,Sepsis,Abdominal,4,5,24,1.42,17.47,39.3,122,133,28,No,No,No,5,Fallecido
+SEP00540,2025-12-04,52,M,Sepsis,Abdominal,2,4,13,1.72,25.13,36.7,132,145,32,No,No,No,7,Superviviente
+SEP00541,2025-12-05,93,M,Shock Séptico,Pulmonar,3,12,38,3.76,13.58,41.5,72,104,32,Sí,No,Sí,32,Fallecido
+SEP00542,2025-12-08,66,F,Sepsis,Pulmonar,2,2,19,1.46,18.31,37.8,105,66,13,No,No,No,6,Superviviente
+SEP00543,2025-12-13,78,M,Sepsis Grave,Pulmonar,2,5,25,4.56,7.86,40.3,90,96,18,No,No,No,19,Superviviente
+SEP00544,2025-12-14,76,M,Sepsis Grave,Torrente Sanguíneo,4,1,14,3.38,21.3,38.7,98,158,27,No,No,No,11,Superviviente
+SEP00545,2025-12-14,85,F,Sepsis Grave,Piel/Tejidos Blandos,5,7,35,3.87,7.39,39.1,100,98,15,No,No,No,13,Superviviente
+SEP00546,2025-12-15,86,F,Sepsis Grave,Abdominal,2,11,46,2.84,19.99,39.9,104,145,19,Sí,No,No,21,Fallecido
+SEP00547,2025-12-19,82,M,Sepsis,Pulmonar,2,2,13,1.51,15.6,39.8,144,97,34,No,No,Sí,8,Superviviente
+SEP00548,2025-12-19,48,M,Sepsis Grave,Urinaria,2,4,17,3.84,15.4,38.0,110,97,22,No,No,No,6,Superviviente
+SEP00549,2025-12-21,59,M,Sepsis Grave,Torrente Sanguíneo,1,9,41,3.65,3.05,39.3,92,125,30,Sí,No,Sí,10,Superviviente
+SEP00550,2025-12-23,83,M,Sepsis Grave,Torrente Sanguíneo,1,9,33,4.43,9.49,39.2,99,123,25,No,No,No,6,Fallecido
