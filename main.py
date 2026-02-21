@@ -88,7 +88,6 @@ try:
     
     # Métricas principales
     st.header("Métricas Principales")
-    col1, col2, col3, col4, col5 = st.columns(5)
     
     total_patients = len(df_filtered)
     mortality_rate = (df_filtered['outcome'] == 'Fallecido').sum() / total_patients * 100
@@ -96,16 +95,54 @@ try:
     avg_los = df_filtered['icu_length_of_stay_days'].mean()
     avg_sofa = df_filtered['sofa_score'].mean()
     
-    col1.metric("Total Pacientes", f"{total_patients:,}")
-    col2.metric("Tasa de Mortalidad", f"{mortality_rate:.1f}%")
-    col3.metric("Edad Promedio", f"{avg_age:.1f} años")
-    col4.metric("Estancia Media UCI", f"{avg_los:.1f} días")
-    col5.metric("SOFA Score Medio", f"{avg_sofa:.1f}")
+    # Crear métricas con cajitas sutiles usando HTML/CSS
+    col1, col2, col3, col4, col5 = st.columns(5)
     
-    st.markdown("---")
+    with col1:
+        st.markdown(f"""
+        <div style="background-color: #f8f9fa; border-left: 3px solid #1f77b4; padding: 16px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
+            <p style="color: #666; font-size: 13px; margin: 0; font-weight: 500;">Total Pacientes</p>
+            <p style="color: #1f77b4; font-size: 28px; font-weight: 600; margin: 8px 0 0 0;">{total_patients:,}</p>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with col2:
+        st.markdown(f"""
+        <div style="background-color: #f8f9fa; border-left: 3px solid #e74c3c; padding: 16px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
+            <p style="color: #666; font-size: 13px; margin: 0; font-weight: 500;">Tasa de Mortalidad</p>
+            <p style="color: #e74c3c; font-size: 28px; font-weight: 600; margin: 8px 0 0 0;">{mortality_rate:.1f}%</p>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with col3:
+        st.markdown(f"""
+        <div style="background-color: #f8f9fa; border-left: 3px solid #1f77b4; padding: 16px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
+            <p style="color: #666; font-size: 13px; margin: 0; font-weight: 500;">Edad Promedio</p>
+            <p style="color: #1f77b4; font-size: 28px; font-weight: 600; margin: 8px 0 0 0;">{avg_age:.1f} años</p>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with col4:
+        st.markdown(f"""
+        <div style="background-color: #f8f9fa; border-left: 3px solid #1f77b4; padding: 16px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
+            <p style="color: #666; font-size: 13px; margin: 0; font-weight: 500;">Estancia Media UCI</p>
+            <p style="color: #1f77b4; font-size: 28px; font-weight: 600; margin: 8px 0 0 0;">{avg_los:.1f} días</p>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with col5:
+        st.markdown(f"""
+        <div style="background-color: #f8f9fa; border-left: 3px solid #1f77b4; padding: 16px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
+            <p style="color: #666; font-size: 13px; margin: 0; font-weight: 500;">SOFA Score Medio</p>
+            <p style="color: #1f77b4; font-size: 28px; font-weight: 600; margin: 8px 0 0 0;">{avg_sofa:.1f}</p>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    st.divider()
     
     # Fila 1: Distribución de severidad y origen de infección
     st.header("Distribución Clínica")
+    st.markdown("*Análisis de la distribución de casos por severidad de sepsis y origen anatómico de la infección*")
     col1, col2 = st.columns(2)
     
     with col1:
@@ -136,8 +173,11 @@ try:
         fig_infection.update_layout(showlegend=False)
         st.plotly_chart(fig_infection, use_container_width=True)
     
+    st.divider()
+    
     # Fila 2: Series temporales
     st.header("Análisis Temporal")
+    st.markdown("*Evolución mensual de ingresos hospitalarios y tasas de mortalidad a lo largo del período de estudio*")
     col1, col2 = st.columns(2)
     
     with col1:
@@ -178,8 +218,11 @@ try:
         fig_mortality_trend.update_xaxes(tickangle=45)
         st.plotly_chart(fig_mortality_trend, use_container_width=True)
     
+    st.divider()
+    
     # Fila 3: Análisis de mortalidad
     st.header("Análisis de Mortalidad")
+    st.markdown("*Comparación de tasas de mortalidad según severidad de sepsis y grupos de edad*")
     col1, col2 = st.columns(2)
     
     with col1:
@@ -226,8 +269,11 @@ try:
         fig_mort_age.update_traces(texttemplate='%{text:.1f}%', textposition='outside')
         st.plotly_chart(fig_mort_age, use_container_width=True)
     
+    st.divider()
+    
     # Fila 4: Intervenciones terapéuticas
     st.header("Intervenciones Terapéuticas")
+    st.markdown("*Distribución de pacientes que requirieron soporte avanzado: ventilación mecánica, diálisis y vasopresores*")
     col1, col2, col3 = st.columns(3)
     
     with col1:
@@ -260,8 +306,11 @@ try:
         )
         st.plotly_chart(fig_vaso, use_container_width=True)
     
+    st.divider()
+    
     # Fila 5: Análisis de scores clínicos
     st.header("Scores Clínicos y Parámetros")
+    st.markdown("*Distribución de scores de severidad SOFA y APACHE II según el nivel de sepsis y resultado del paciente*")
     col1, col2 = st.columns(2)
     
     with col1:
@@ -290,8 +339,11 @@ try:
         )
         st.plotly_chart(fig_apache, use_container_width=True)
     
+    st.divider()
+    
     # Fila 6: Estancia en UCI
     st.header("Análisis de Estancia en UCI")
+    st.markdown("*Duración de hospitalización en UCI según severidad y resultado clínico del paciente*")
     col1, col2 = st.columns(2)
     
     with col1:
@@ -321,8 +373,11 @@ try:
         )
         st.plotly_chart(fig_los_outcome, use_container_width=True)
     
+    st.divider()
+    
     # Fila 7: Correlaciones
     st.header("Análisis de Correlaciones")
+    st.markdown("*Matriz de correlación entre variables numéricas y explorador interactivo de relaciones entre parámetros clínicos*")
     
     # Crear matriz de correlación
     numeric_cols = ['age', 'comorbidities_count', 'sofa_score', 'apache_ii_score',
@@ -345,6 +400,7 @@ try:
     
     # Scatter plot interactivo
     st.subheader("Explorador de Relaciones")
+    st.markdown("*Selecciona variables para visualizar su relación y tendencia*")
     col1, col2, col3 = st.columns(3)
     
     with col1:
@@ -366,8 +422,11 @@ try:
     )
     st.plotly_chart(fig_scatter, use_container_width=True)
     
+    st.divider()
+    
     # Tabla de estadísticas detalladas
     st.header("Estadísticas Detalladas")
+    st.markdown("*Estadísticas agregadas por diferentes categorías clínicas*")
     
     tab1, tab2, tab3 = st.tabs(["Por Severidad", "Por Origen de Infección", "Por Intervenciones"])
     
@@ -416,8 +475,11 @@ try:
                                          intervention_summary['Pacientes (No)']) * 100).round(2)
         st.dataframe(intervention_summary, use_container_width=True)
     
+    st.divider()
+    
     # Detección de anomalías
     st.header("Detección de Anomalías")
+    st.markdown("*Identificación de períodos con tasas de mortalidad significativamente superiores al promedio*")
     
     # Analizar marzo 2025
     march_2025 = df_filtered[
