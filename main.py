@@ -481,25 +481,57 @@ try:
     st.header("Detección de Anomalías")
     st.markdown("*Identificación de períodos con tasas de mortalidad significativamente superiores al promedio*")
     
-    # Analizar marzo 2025
-    march_2025 = df_filtered[
-        (df_filtered['admission_date'].dt.year == 2025) & 
-        (df_filtered['admission_date'].dt.month == 3)
+    # Filtros para seleccionar mes y año
+    col_filter1, col_filter2 = st.columns(2)
+    
+    with col_filter1:
+        selected_year = st.selectbox(
+            "Seleccionar Año",
+            options=sorted(df_filtered['year'].unique()),
+            index=len(sorted(df_filtered['year'].unique())) - 1  # Último año por defecto
+        )
+    
+    with col_filter2:
+        month_names = {
+            1: 'Enero', 2: 'Febrero', 3: 'Marzo', 4: 'Abril',
+            5: 'Mayo', 6: 'Junio', 7: 'Julio', 8: 'Agosto',
+            9: 'Septiembre', 10: 'Octubre', 11: 'Noviembre', 12: 'Diciembre'
+        }
+        
+        # Obtener meses disponibles para el año seleccionado
+        available_months = sorted(df_filtered[df_filtered['year'] == selected_year]['month'].unique())
+        month_options = {month: month_names[month] for month in available_months}
+        
+        selected_month = st.selectbox(
+            "Seleccionar Mes",
+            options=list(month_options.keys()),
+            format_func=lambda x: month_options[x],
+            index=2 if 3 in available_months else 0  # Marzo por defecto si existe
+        )
+    
+    # Analizar el período seleccionado
+    selected_period = df_filtered[
+        (df_filtered['admission_date'].dt.year == selected_year) & 
+        (df_filtered['admission_date'].dt.month == selected_month)
     ]
     
-    if len(march_2025) > 0:
-        march_mortality = (march_2025['outcome'] == 'Fallecido').sum() / len(march_2025) * 100
+    if len(selected_period) > 0:
+        period_mortality = (selected_period['outcome'] == 'Fallecido').sum() / len(selected_period) * 100
         overall_mortality = (df_filtered['outcome'] == 'Fallecido').sum() / len(df_filtered) * 100
         
         col1, col2, col3 = st.columns(3)
-        col1.metric("Pacientes Marzo 2025", len(march_2025))
-        col2.metric("Mortalidad Marzo 2025", f"{march_mortality:.1f}%", 
-                   delta=f"{march_mortality - overall_mortality:.1f}% vs media",
+        col1.metric(f"Pacientes {month_names[selected_month]} {selected_year}", len(selected_period))
+        col2.metric(f"Mortalidad {month_names[selected_month]} {selected_year}", f"{period_mortality:.1f}%", 
+                   delta=f"{period_mortality - overall_mortality:.1f}% vs media",
                    delta_color="inverse")
         col3.metric("Mortalidad General", f"{overall_mortality:.1f}%")
         
-        if march_mortality > overall_mortality * 1.2:  # 20% mayor que la media
-            st.warning(f"ANOMALÍA DETECTADA: La mortalidad en Marzo 2025 ({march_mortality:.1f}%) es significativamente superior a la media general ({overall_mortality:.1f}%). Diferencia de {march_mortality - overall_mortality:.1f} puntos porcentuales.")
+        if period_mortality > overall_mortality * 1.2:  # 20% mayor que la media
+            st.warning(f"ANOMALÍA DETECTADA: La mortalidad en {month_names[selected_month]} {selected_year} ({period_mortality:.1f}%) es significativamente superior a la media general ({overall_mortality:.1f}%). Diferencia de {period_mortality - overall_mortality:.1f} puntos porcentuales.")
+        elif period_mortality < overall_mortality * 0.8:  # 20% menor que la media
+            st.success(f"PERÍODO FAVORABLE: La mortalidad en {month_names[selected_month]} {selected_year} ({period_mortality:.1f}%) es significativamente inferior a la media general ({overall_mortality:.1f}%). Diferencia de {period_mortality - overall_mortality:.1f} puntos porcentuales.")
+    else:
+        st.warning(f"No hay datos disponibles para {month_names[selected_month]} {selected_year}.")
     
     # Footer
     st.markdown("---")
