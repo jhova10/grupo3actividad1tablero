@@ -443,8 +443,8 @@ try:
     st.markdown("---")
     st.markdown(f"""
     <div style='text-align: center'>
-        <p>Dashboard generado el {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</p>
-        <p>Total de registros: {len(df_filtered):,} | Período: {df_filtered['admission_date'].min().strftime('%Y-%m-%d')} a {df_filtered['admission_date'].max().strftime('%Y-%m-%d')}</p>
+        <p>Dashboard Grupo 3 </p>
+       <p> Registro de la UCI de un hospital de todos los ingresos por sepsis, días de estancia, la mortalidad y la supervivencia.</p>
     </div>
     """, unsafe_allow_html=True)
 
