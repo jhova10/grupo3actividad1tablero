@@ -20,7 +20,7 @@ st.set_page_config(
 )
 
 # Título principal
-st.title("🏥 Dashboard Analítico: Sepsis en UCI")
+st.title(" Dashboard Analítico: Sepsis en UCI")
 st.markdown("---")
 
 # Cargar datos
@@ -37,7 +37,7 @@ try:
     df = load_data()
     
     # Sidebar - Filtros
-    st.sidebar.header("🔍 Filtros")
+    st.sidebar.header("Filtros")
     
     # Filtro de fecha
     min_date = df['admission_date'].min().date()
@@ -437,7 +437,7 @@ try:
         col3.metric("Mortalidad General", f"{overall_mortality:.1f}%")
         
         if march_mortality > overall_mortality * 1.2:  # 20% mayor que la media
-            st.warning(f"⚠️ ANOMALÍA DETECTADA: La mortalidad en Marzo 2025 ({march_mortality:.1f}%) es significativamente superior a la media general ({overall_mortality:.1f}%). Diferencia de {march_mortality - overall_mortality:.1f} puntos porcentuales.")
+            st.warning(f"ANOMALÍA DETECTADA: La mortalidad en Marzo 2025 ({march_mortality:.1f}%) es significativamente superior a la media general ({overall_mortality:.1f}%). Diferencia de {march_mortality - overall_mortality:.1f} puntos porcentuales.")
     
     # Footer
     st.markdown("---")
@@ -449,8 +449,8 @@ try:
     """, unsafe_allow_html=True)
 
 except FileNotFoundError:
-    st.error("❌ Error: No se encontró el archivo 'sepsis_icu_data.csv'. Por favor, asegúrate de que el archivo esté en el mismo directorio que este script.")
-    st.info("💡 Ejecuta primero el script de generación de datos o el notebook para crear el archivo CSV.")
+    st.error("Error: No se encontró el archivo 'sepsis_icu_data.csv'. Por favor, asegúrate de que el archivo esté en el mismo directorio que este script.")
+    st.info("Ejecuta primero el script de generación de datos o el notebook para crear el archivo CSV.")
 except Exception as e:
-    st.error(f"❌ Error al cargar los datos: {str(e)}")
+    st.error(f"Error al cargar los datos: {str(e)}")
     st.exception(e)
