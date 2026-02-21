@@ -87,7 +87,7 @@ try:
         ]
     
     # Métricas principales
-    st.header("📊 Métricas Principales")
+    st.header("Métricas Principales")
     col1, col2, col3, col4, col5 = st.columns(5)
     
     total_patients = len(df_filtered)
@@ -105,7 +105,7 @@ try:
     st.markdown("---")
     
     # Fila 1: Distribución de severidad y origen de infección
-    st.header("🔬 Distribución Clínica")
+    st.header("Distribución Clínica")
     col1, col2 = st.columns(2)
     
     with col1:
@@ -137,7 +137,7 @@ try:
         st.plotly_chart(fig_infection, use_container_width=True)
     
     # Fila 2: Series temporales
-    st.header("📈 Análisis Temporal")
+    st.header("Análisis Temporal")
     col1, col2 = st.columns(2)
     
     with col1:
@@ -151,7 +151,7 @@ try:
             labels={'year_month': 'Mes', 'count': 'Número de ingresos'},
             markers=True
         )
-        fig_admissions.update_xaxis(tickangle=45)
+        fig_admissions.update_xaxes(tickangle=45)
         st.plotly_chart(fig_admissions, use_container_width=True)
     
     with col2:
@@ -175,11 +175,11 @@ try:
             line_color="gray",
             annotation_text=f"Media: {mortality_rate:.1f}%"
         )
-        fig_mortality_trend.update_xaxis(tickangle=45)
+        fig_mortality_trend.update_xaxes(tickangle=45)
         st.plotly_chart(fig_mortality_trend, use_container_width=True)
     
     # Fila 3: Análisis de mortalidad
-    st.header("💀 Análisis de Mortalidad")
+    st.header("Análisis de Mortalidad")
     col1, col2 = st.columns(2)
     
     with col1:
@@ -227,7 +227,7 @@ try:
         st.plotly_chart(fig_mort_age, use_container_width=True)
     
     # Fila 4: Intervenciones terapéuticas
-    st.header("💊 Intervenciones Terapéuticas")
+    st.header("Intervenciones Terapéuticas")
     col1, col2, col3 = st.columns(3)
     
     with col1:
@@ -261,7 +261,7 @@ try:
         st.plotly_chart(fig_vaso, use_container_width=True)
     
     # Fila 5: Análisis de scores clínicos
-    st.header("📊 Scores Clínicos y Parámetros")
+    st.header("Scores Clínicos y Parámetros")
     col1, col2 = st.columns(2)
     
     with col1:
@@ -291,7 +291,7 @@ try:
         st.plotly_chart(fig_apache, use_container_width=True)
     
     # Fila 6: Estancia en UCI
-    st.header("⏱️ Análisis de Estancia en UCI")
+    st.header("Análisis de Estancia en UCI")
     col1, col2 = st.columns(2)
     
     with col1:
@@ -322,7 +322,7 @@ try:
         st.plotly_chart(fig_los_outcome, use_container_width=True)
     
     # Fila 7: Correlaciones
-    st.header("🔗 Análisis de Correlaciones")
+    st.header("Análisis de Correlaciones")
     
     # Crear matriz de correlación
     numeric_cols = ['age', 'comorbidities_count', 'sofa_score', 'apache_ii_score',
@@ -340,11 +340,11 @@ try:
         aspect='auto',
         text_auto='.2f'
     )
-    fig_corr.update_xaxis(tickangle=45)
+    fig_corr.update_xaxes(tickangle=45)
     st.plotly_chart(fig_corr, use_container_width=True)
     
     # Scatter plot interactivo
-    st.subheader("🔍 Explorador de Relaciones")
+    st.subheader("Explorador de Relaciones")
     col1, col2, col3 = st.columns(3)
     
     with col1:
@@ -367,7 +367,7 @@ try:
     st.plotly_chart(fig_scatter, use_container_width=True)
     
     # Tabla de estadísticas detalladas
-    st.header("📋 Estadísticas Detalladas")
+    st.header("Estadísticas Detalladas")
     
     tab1, tab2, tab3 = st.tabs(["Por Severidad", "Por Origen de Infección", "Por Intervenciones"])
     
@@ -417,7 +417,7 @@ try:
         st.dataframe(intervention_summary, use_container_width=True)
     
     # Detección de anomalías
-    st.header("⚠️ Detección de Anomalías")
+    st.header("Detección de Anomalías")
     
     # Analizar marzo 2025
     march_2025 = df_filtered[
